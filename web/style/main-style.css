@@ -1,0 +1,17 @@
+@import "./variables-style.css";
+@import "./reset-style.css";
+@import "./layout-style.css";
+@import "./header-style.css";
+@import "./footer-style.css";
+@import "./banner-style.css";
+@import "./grid-style.css";
+
+/* @import "./sizing-style.css";
+@import "./icon-style.css";
+@import "./text-style.css";
+@import "./form-style.css";
+@import "./button-style.css";
+@import "./image-style.css";
+@import "./footer-style.css";
+@import "./listtable-style.css";
+@import "./component-style.css"; */
