@@ -3,7 +3,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 2.5vw;
     padding: 2.5vw;
     background-color: var(--gray-col);
 }

@@ -1,16 +1,16 @@
 .grid-wrapper {
     display: block;
-    margin: 2.5vw 0;
-    width: 95%;
+    margin-bottom: var(--gasp);
+    width: calc(100% - 2 * var(--gasp));
     background-color: var(--gray-col);
-    padding: 2.5rem;
+    padding: calc(var(--gasp)*1.25);
 }
 
 .grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 2.25vw;
+    grid-gap: calc(var(--gasp)/1.25);
 }
 
 .grid > .card > h1 {

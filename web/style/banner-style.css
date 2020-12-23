@@ -2,8 +2,8 @@
     position: relative;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2.5vw;
-    width: 95%;
+    margin: var(--gasp);
+    width: calc(100% - 2 * var(--gasp));
     height: 35vh;
     background-color: var(--gray-col);
 }
