@@ -8,7 +8,7 @@ header {
 
 .hd-left,
 .hd-right,
-.hd-middle {
+.hd-middle-alt {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,16 +24,43 @@ header {
     width: 175px;
 }
 
-.hd-middle {
+.hd-middle,
+.hd-middle-alt {
     display: flex;
     align-items: center;
     width: 45%;
+}
+
+.hd-middle-alt {
+    justify-content: space-between;
+    background-color: transparent;
 }
 
 .hd-middle > .search-box {
     display: flex;
     align-items: center;
     width: 90%;
+}
+
+.hd-middle-alt > .file-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    font-size: 1.25rem;
+    background-color: var(--gray-col);
+}
+
+.hd-middle-alt > .cast-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    font-size: 1.25rem;
+    color: white;
+    background-color: var(--tertiary-col);
 }
 
 .hd-middle > .search-box > input.search-inp {
@@ -80,6 +107,7 @@ header {
     background-color: var(--cyan-col);
 }
 
+.meta-infos,
 .menu-box {
     display: flex;
     align-items: center;
@@ -88,5 +116,10 @@ header {
 }
 
 .menu-item {
+    font-size: 1.1rem;
+}
+
+.nb-like,
+.author {
     font-size: 1.1rem;
 }

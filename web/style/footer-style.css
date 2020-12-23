@@ -8,6 +8,13 @@ footer {
     background-color: var(--gray-col);
 }
 
+body.player > footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    margin-top: 0;
+}
+
 footer > .footer-left {
     display: flex;
 }

@@ -1,0 +1,22 @@
+.code-editor {
+    display: flex;
+    width: 75%;
+    height: 84vh;
+    background-color: var(--gray-col);
+    margin-right: 2.5%;
+    padding: .5rem 0;
+    font-size: 16px;
+}
+
+.code-editor > .lines {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75px;
+    border-right: 1px solid var(--dgray-col);
+}
+
+.code-editor > .main-input {
+    width: 100%;
+    padding-left: 1rem;
+}

@@ -1,0 +1,143 @@
+
+/*#################################### Browser ###################################################*/
+/* The browser window */
+.browser {
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20%;
+    right: 43%;
+    width: 600px;
+    height: 300px;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.1s, height 0.2s;
+    /* box-shadow: 2.5px 7.5px 25px 5px #a7a7a770; */
+}
+
+/* browser for browser-columns and the top "toolbar" */
+.browser-titlebar {
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: move;
+    background: #fffffff2;
+    backdrop-filter: blur(2px);
+}
+
+.browser-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.browser-reload,
+.browser-nav {
+    padding: .25rem .5rem;
+    font-size: 1rem;
+    background-color: var(--gray-col);
+    color: var(--primary-col);
+}
+
+.browser-reload::after {
+    content: '\f01e';
+    font-family: FontAwesome;
+}
+
+#brw-back.browser-nav::after {
+    content: '\f060';
+    font-family: FontAwesome;
+}
+
+#brw-forward.browser-nav::after {
+    content: '\f061';
+    font-family: FontAwesome;
+}
+
+.browser-nav:hover,
+.browser-reload:hover {
+    cursor: pointer;
+}
+
+.browser-field {
+    margin-left: 2%;
+    width: 65%;
+}
+
+.browser-dot {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Three dots */
+.dot {
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #bbb;
+    display: block;
+    box-shadow: 0.5px 1px 3px 0.5px rgba(26, 26, 26, 0.25);
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+/* Style the input field */
+.browser-field input {
+    width: 100%;
+    border: none;
+    height: 25px;
+    padding: 5px;
+    font-size: 18px;
+    color: var(--primary-col);
+    background-color: var(--gray-col);
+    /* box-shadow: 0.25px 0.5px 3px 0.25px rgba(75, 75, 75, 0.753); */
+}
+
+/* Three bars (hamburger menu) */
+.browser-menu:hover {
+    cursor: pointer;
+}
+
+/* Page content */
+.browser-content {
+    overflow: hidden;
+    background-color: var(--dgray-col);
+    padding: 0.5%;
+    height: 100%;
+}
+
+/* The Modal (background) */
+.modalbrw {
+    position: fixed;
+    z-index: 100;
+    padding: 2.5%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modalbrw-content {
+    margin: 0;
+    padding: 0;
+    background: #81808040;
+    backdrop-filter: blur(2px);
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+    position: static;
+}
+
+/* The Close Button */
+.brw-iframe {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
