@@ -6,6 +6,7 @@
     width: calc(100% - 2 * var(--gasp));
     height: 35vh;
     background-color: var(--gray-col);
+    box-shadow: var(--shadow);
 }
 
 .banner::after {

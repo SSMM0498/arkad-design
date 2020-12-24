@@ -1,8 +1,9 @@
 /*===== VARIABLES CSS =====*/
 /* Layout */
 :root {
-    --header-h: 8.5vh;
+    --header-h: 65px;
     --gasp: 25px;
+    --shadow: .5px 1px 2.5px .5px #0a0a0a2f, -1px -1px 2.5px 0.5px #0a0a0a2f;
 }
 
 /* Colors */
@@ -12,7 +13,7 @@
     --tertiary-col: #845af7;
 
     --gray-col: #e1e1e1;
-    --dgray-col: #bababa;
+    --dgray-col: #aaaaaa;
     --dgray-col-t: #b3b3b3b3;
 
     --yellow-col: #ffc600;
@@ -22,31 +23,59 @@
 }
 
 .pcol {
-    color: var(--primary-col);
+    color: var(--primary-col) !important;
+}
+
+.back-pcol {
+    background-color: var(--primary-col) !important;
 }
 
 .scol {
-    color: var(--secondary-col);
+    color: var(--secondary-col) !important;
+}
+
+.back-scol {
+    background-color: var(--secondary-col) !important;
 }
 
 .tcol {
-    color: var(--tertiary-col);
+    color: var(--tertiary-col) !important;
+}
+
+.back-tcol {
+    background-color: var(--tertiary-col) !important;
 }
 
 .ycol {
-    color: var(--yellow-col);
+    color: var(--yellow-col) !important;
+}
+
+.back-ycol {
+    background-color: var(--yellow-col) !important;
 }
 
 .ccol {
-    color: var(--cyan-col);
+    color: var(--cyan-col) !important;
+}
+
+.back-ccol {
+    background-color: var(--cyan-col) !important;
 }
 
 .gcol {
-    color: var(--green-col);
+    color: var(--green-col) !important;
+}
+
+.back-gcol {
+    background-color: var(--green-col) !important;
 }
 
 .rcol {
-    color: var(--red-col);
+    color: var(--red-col) !important;
+}
+
+.back-rcol {
+    background-color: var(--red-col) !important;
 }
 
 /* Font and typography */
@@ -74,7 +103,7 @@
 /* Marges */
 :root {
     --sz-1: .5rem;
-    --sz-2: .1rem;
+    --sz-2: 1rem;
     --sz-3: 1.5rem;
     --sz-4: 2rem;
     --sz-5: 2.5rem;

@@ -1,7 +1,166 @@
 .side-bar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     width: 20%;
-    margin-right: var(--gasp);
     height: 84vh;
+    margin-right: var(--gasp);
     background-color: var(--gray-col);
+    padding: calc(var(--gasp)/1.25);
+    box-shadow: var(--shadow);
 }
+
+.side-bar.left {
+    position: absolute;
+    right: 0;
+    width: calc(35% - var(--gasp));
+    height: 95vh;
+    justify-content: end;
+    padding: calc(var(--gasp)*1.25);
+    margin-right: 0;
+    transform: translateY(-10%);
+    z-index: 3;
+    overflow: auto;
+    box-shadow: 2.5px 7.5px 20px 5px #00000054;
+}
+
+.side-bar > .side-bar-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: calc(var(--gasp)/1.75);
+}
+
+.side-bar > .side-bar-header > .action-btn {
+    width: var(--gasp);
+    height: var(--gasp);
+    background-color: var(--dgray-col);
+    cursor: pointer;
+}
+
+.side-bar > .file-tree {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.side-bar > .file-tree div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.05rem;
+    padding: 2.5px 0;
+    padding-left: 25px;
+}
+
+.side-bar > .file-tree div span:hover {
+    cursor: pointer;
+    color: var(--gray-col);
+    background-color: var(--dgray-col);
+    opacity: .75;
+}
+
+.side-bar > .file-tree > div {
+    padding-left: 5px;
+}
+
+.side-bar > .file-tree div.file > span,
+.side-bar > .file-tree div.folder > span {
+    margin-bottom: 1px;
+}
+
+.side-bar > .file-tree div.active {
+    color: white;
+    background-color: var(--secondary-col);
+}
+
+.side-bar > .slide-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 2.5px 7.5px 25px 5px #a7a7a770;
+}
+
+.side-bar > .slide-toggler > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.side-bar.left > .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: calc(var(--gasp)*1.25);
+    height: calc(var(--gasp)*1.25);
+    background-color: var(--red-col);
+    color: white;
+}
+
+.comment-input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    align-items: flex-end;
+    margin-bottom: var(--sz-3);
+    background-color: var(--dgray-col);
+}
+
+.comment-input > textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    flex-direction: column;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    padding: var(--sz-1);
+}
+
+.comment-input > button.send-btn {
+    cursor: pointer;
+    padding: .75rem 1.25rem;
+}
+
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: var(--sz-2);
+}
+
+.comment-box > .comment-meta {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--sz-1);
+}
+
+.comment-box > .comment-reply {
+    border-left: 1px solid var(--dgray-col);
+    margin-top: var(--sz-1);
+    padding-left: var(--sz-5);
+}
+
+.comment-box > .comment-meta > img {
+    width: calc(var(--gasp)*2);
+    height: calc(var(--gasp)*2);
+    object-fit: contain;
+}
+
+.comment-box > button.reply-btn {
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: .5px solid var(--secondary-col);
+    color: var(--secondary-col);
+}
+
+/* .side-bar > .file-tree div.folder::before {
+    
+} */

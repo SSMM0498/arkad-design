@@ -5,7 +5,7 @@
     background-color: var(--gray-col);
     margin-right: var(--gasp);
     padding: .5rem 0;
-    font-size: 16px;
+    box-shadow: var(--shadow);
 }
 
 .code-editor > .lines {

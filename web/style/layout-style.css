@@ -14,6 +14,7 @@ body {
     color: var(--primary-col);
 }
 
+/* body.recorder, */
 body.player {
     overflow: hidden;
     max-height: 100vh;
@@ -25,9 +26,9 @@ main {
     flex-direction: column;
     width: 100%;
     max-width: 100%;
-    min-height: 100vh;
 }
 
+body.recorder > main,
 body.player > main {
     margin-top: var(--gasp);
     align-items: flex-start;
@@ -48,6 +49,7 @@ section {
     padding: calc(var(--gasp)/1.25) calc(var(--gasp)*1.25);
     color: var(--primary-col);
     background-color: var(--gray-col);
+    box-shadow: .5px 0px 2.5px .5px #00000054;
 }
 
 .search-title > span {

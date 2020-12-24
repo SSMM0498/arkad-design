@@ -15,6 +15,7 @@ header {
     justify-content: center;
     height: 100%;
     background-color: var(--gray-col);
+    box-shadow: var(--shadow);
 }
 
 .hd-left {
@@ -36,6 +37,7 @@ header {
 .hd-middle-alt {
     justify-content: space-between;
     background-color: transparent;
+    box-shadow: none;
 }
 
 .hd-middle > .search-box {
@@ -53,6 +55,7 @@ header {
     height: 100%;
     font-size: 1.25rem;
     background-color: var(--gray-col);
+    box-shadow: var(--shadow);
 }
 
 .hd-middle-alt > .cast-name {
@@ -64,6 +67,7 @@ header {
     font-size: 1.25rem;
     color: white;
     background-color: var(--tertiary-col);
+    box-shadow: var(--shadow);
 }
 
 .hd-middle > .search-box > input.search-inp {
@@ -105,9 +109,38 @@ header {
     width: 35%;
 }
 
+.recorder .hd-right {
+    justify-content: space-between;
+    background-color: transparent;
+    box-shadow: none;
+}
+
 .hd-right > button.login-btn {
     padding: .5rem .75rem;
     background-color: var(--cyan-col);
+}
+
+.hd-right > button.profile-btn {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--gray-col);
+    box-shadow: var(--shadow);
+}
+
+.hd-right > button.profile-btn > img {
+    width: calc(var(--gasp)*2);
+    height: calc(var(--gasp)*2);
+    object-fit: contain;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hd-right > button.profile-btn > span {
+    width: 90%;
+    cursor: pointer;
 }
 
 .meta-infos,
@@ -116,6 +149,18 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 75%;
+}
+
+.recorder .meta-infos {
+    width: 50%;
+    height: 100%;
+    margin-right: var(--gasp);
+    background-color: var(--gray-col);
+    box-shadow: var(--shadow);
+}
+
+.recorder .meta-infos > button {
+    padding: .5rem .75rem
 }
 
 .menu-item {

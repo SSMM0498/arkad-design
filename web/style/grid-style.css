@@ -4,6 +4,7 @@
     width: calc(100% - 2 * var(--gasp));
     background-color: var(--gray-col);
     padding: calc(var(--gasp)*1.25);
+    box-shadow: var(--shadow);
 }
 
 .grid {

@@ -46,6 +46,7 @@
 @-ms-viewport { width: device-width }
 
 html {
+    min-width: 100vw;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
