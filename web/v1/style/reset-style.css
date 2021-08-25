@@ -50,6 +50,7 @@ html {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
+    overflow-x: hidden;
     font-family: var(--body-font);
 }
 

@@ -1,9 +1,10 @@
 /*===== VARIABLES CSS =====*/
 /* Layout */
 :root {
-    --header-h: 65px;
+    --header-h: 60px;
     --gasp: 25px;
-    --shadow: .5px 1px 2.5px .5px #0a0a0a2f, -1px -1px 2.5px 0.5px #0a0a0a2f;
+    --radius: 5px;
+    --shadow: .5px 1px 30px 5px #0000003f, -1px -1px 30px 5px #0000003f;
 }
 
 /* Colors */
@@ -12,7 +13,7 @@
     --secondary-col: #fe4284;
     --tertiary-col: #845af7;
 
-    --gray-col: #e1e1e1;
+    --gray-col: #f1f1f1;
     --dgray-col: #aaaaaa;
     --dgray-col-t: #b3b3b3b3;
 
