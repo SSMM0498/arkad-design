@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import "./variables.css";
+@import "./reset.css";
+@import "./layout.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./banner.css";
+@import "./slide.css";
+@import "./grid.css";
+@import "./player.css";
+@import "./filetree.css";
+@import "./infos.css";

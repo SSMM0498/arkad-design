@@ -1,0 +1,118 @@
+/*===== VARIABLES CSS =====*/
+/* Layout */
+:root {
+    --header-h: 60px;
+    --gasp: 25px;
+    --radius: 2.5px;
+    --shadow: .5px 1px 30px 5px #0000003f, -1px -1px 30px 5px #0000003f;
+}
+
+/* Colors */
+:root {
+    --primary-col: #a9a0fa;
+    --dprimary-col:#5a52a0;
+    --secondary-col: #f3cb50;
+    --tertiary-col: #845af7;
+
+    --gray-col: #f1f1f1;
+    --dgray-col: #aaaaaa;
+    --dgray-col-t: #b3b3b3b3;
+
+    --yellow-col: #F3CB51;
+    --cyan-col: #00d6e7;
+    --green-col: #00e788;
+    --red-col: #fe2222;
+}
+
+.pcol {
+    color: var(--primary-col) !important;
+}
+
+.back-pcol {
+    background-color: var(--primary-col) !important;
+}
+
+.scol {
+    color: var(--secondary-col) !important;
+}
+
+.back-scol {
+    background-color: var(--secondary-col) !important;
+}
+
+.tcol {
+    color: var(--tertiary-col) !important;
+}
+
+.back-tcol {
+    background-color: var(--tertiary-col) !important;
+}
+
+.ycol {
+    color: var(--yellow-col) !important;
+}
+
+.back-ycol {
+    background-color: var(--yellow-col) !important;
+}
+
+.ccol {
+    color: var(--cyan-col) !important;
+}
+
+.back-ccol {
+    background-color: var(--cyan-col) !important;
+}
+
+.gcol {
+    color: var(--green-col) !important;
+}
+
+.back-gcol {
+    background-color: var(--green-col) !important;
+}
+
+.rcol {
+    color: var(--red-col) !important;
+}
+
+.back-rcol {
+    background-color: var(--red-col) !important;
+}
+
+/* Font and typography */
+:root {
+    --body-font: Inter;
+    --hero-font-sz: 3rem;
+    --title-font-sz: 2rem;
+    --subtitle-font-sz: 1.75rem;
+    --medium-font-sz: 1.25rem;
+    --normal-font-sz: .975rem;
+    --small-font-sz: .875rem;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --hero-font-sz: 4.5rem;
+        --title-font-sz: 3rem;
+        --subtitle-font-sz: 2rem;
+        --medium-font-sz: 1.45rem;
+        --normal-font-sz: 1rem;
+        --small-font-sz: .875rem;
+    }
+}
+
+/* Marges */
+:root {
+    --sz-1: .5rem;
+    --sz-2: 1rem;
+    --sz-3: 1.5rem;
+    --sz-4: 2rem;
+    --sz-5: 2.5rem;
+}
+
+/* z index */
+:root {
+    --z-above: 10;
+    --z-bellow: -1;
+}

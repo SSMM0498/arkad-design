@@ -1,0 +1,478 @@
+main .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - var(--header-h));
+}
+
+main .left,
+main .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+}
+
+main .banner .right {
+    padding-left: 0;
+    width: 55%;
+    position: relative;
+}
+
+main .banner  h1 {
+    font-weight: 500;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+main .banner  p.content {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+main .banner .btn-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+
+main .banner .btn.play {
+    display: flex;
+    align-items: center;
+}
+
+main .banner .btn.play::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-right: .5rem;
+    border-radius: 32px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M16.394 12L10 7.737v8.526L16.394 12zm2.982.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z' fill='rgba(0,0,0,1)'/%3E%3C/svg%3E");
+}
+
+main .banner .sidebar {
+    position: absolute;
+    top: 5%;
+    left: .5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 3.5vw;
+    height: 82.5%;
+    border-radius: 2.5px;
+    background-color: black;
+}
+
+.hist,
+main .banner .dots {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem .25rem;
+    justify-content: space-around;
+}
+
+main .banner .dots span {
+    border-radius: 6px;
+    width: 5px;
+    height: 5px;
+    background-color: #ee2e2e;
+}
+
+main .banner .dots span:nth-child(2) {
+    background-color: #f3f33f;
+}
+
+main .banner .dots span:nth-child(3) {
+    background-color: #7ce67c;
+}
+
+main .banner .sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+main .banner .sidebar nav span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .banner .sidebar nav span::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 1.25rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M15 4H5v16h14V8h-4V4zM3 2.992C3 2.444 3.447 2 3.999 2H16l5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992zM17.657 12l-3.536 3.536-1.414-1.415L14.828 12l-2.12-2.121 1.413-1.415L17.657 12zM6.343 12L9.88 8.464l1.414 1.415L9.172 12l2.12 2.121-1.413 1.415L6.343 12z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+main .banner .sidebar nav span:nth-child(2):after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M13 19.9a5.002 5.002 0 0 0 4-4.9v-3a4.98 4.98 0 0 0-.415-2h-9.17A4.98 4.98 0 0 0 7 12v3a5.002 5.002 0 0 0 4 4.9V14h2v5.9zm-7.464-2.21A6.979 6.979 0 0 1 5 15H2v-2h3v-1c0-.643.087-1.265.249-1.856L3.036 8.866l1-1.732L6.056 8.3a7.01 7.01 0 0 1 .199-.3h11.49c.069.098.135.199.199.3l2.02-1.166 1 1.732-2.213 1.278c.162.59.249 1.213.249 1.856v1h3v2h-3c0 .953-.19 1.862-.536 2.69l2.5 1.444-1 1.732-2.526-1.458A6.986 6.986 0 0 1 12 22a6.986 6.986 0 0 1-5.438-2.592l-2.526 1.458-1-1.732 2.5-1.443zM8 6a4 4 0 1 1 8 0H8z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+main .banner .sidebar nav span:nth-child(3):after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5H4zm8 10h6v2h-6v-2zm-3.333-3L5.838 9.172l1.415-1.415L11.495 12l-4.242 4.243-1.415-1.415L8.667 12z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+main .banner .sidebar nav span:nth-child(4):after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M2.213 14.06a9.945 9.945 0 0 1 0-4.12c1.11.13 2.08-.237 2.396-1.001.317-.765-.108-1.71-.986-2.403a9.945 9.945 0 0 1 2.913-2.913c.692.877 1.638 1.303 2.403.986.765-.317 1.132-1.286 1.001-2.396a9.945 9.945 0 0 1 4.12 0c-.13 1.11.237 2.08 1.001 2.396.765.317 1.71-.108 2.403-.986a9.945 9.945 0 0 1 2.913 2.913c-.877.692-1.303 1.638-.986 2.403.317.765 1.286 1.132 2.396 1.001a9.945 9.945 0 0 1 0 4.12c-1.11-.13-2.08.237-2.396 1.001-.317.765.108 1.71.986 2.403a9.945 9.945 0 0 1-2.913 2.913c-.692-.877-1.638-1.303-2.403-.986-.765.317-1.132 1.286-1.001 2.396a9.945 9.945 0 0 1-4.12 0c.13-1.11-.237-2.08-1.001-2.396-.765-.317-1.71.108-2.403.986a9.945 9.945 0 0 1-2.913-2.913c.877-.692 1.303-1.638.986-2.403-.317-.765-1.286-1.132-2.396-1.001zM4 12.21c1.1.305 2.007 1.002 2.457 2.086.449 1.085.3 2.22-.262 3.212.096.102.195.201.297.297.993-.562 2.127-.71 3.212-.262 1.084.45 1.781 1.357 2.086 2.457.14.004.28.004.42 0 .305-1.1 1.002-2.007 2.086-2.457 1.085-.449 2.22-.3 3.212.262.102-.096.201-.195.297-.297-.562-.993-.71-2.127-.262-3.212.45-1.084 1.357-1.781 2.457-2.086.004-.14.004-.28 0-.42-1.1-.305-2.007-1.002-2.457-2.086-.449-1.085-.3-2.22.262-3.212a7.935 7.935 0 0 0-.297-.297c-.993.562-2.127.71-3.212.262C13.212 6.007 12.515 5.1 12.21 4a7.935 7.935 0 0 0-.42 0c-.305 1.1-1.002 2.007-2.086 2.457-1.085.449-2.22.3-3.212-.262-.102.096-.201.195-.297.297.562.993.71 2.127.262 3.212C6.007 10.788 5.1 11.485 4 11.79c-.004.14-.004.28 0 .42zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+main .banner .editor {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 80%;
+    padding: 2rem;
+    border-radius: 2.5px;
+    background-color: var(--primary-col);
+}
+
+main .banner .editor .text span {
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .banner .editor .text {
+    counter-reset: line;
+    overflow: hidden;
+}
+
+main .banner .editor .tabs {
+    position: absolute;
+    top: -3.5%;
+    left: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+
+main .banner .editor .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.5px;
+    width: 27.5%;
+    padding: .75rem 0;
+    background-color: var(--secondary-col);
+}
+
+main .banner .editor .tab.active {
+    color: white;
+    font-weight: 600;
+    background-color: var(--tertiary-col);
+    box-shadow: rgba(0, 0, 0, 0.125) 0px 5px 15px;
+}
+
+main .banner .editor .line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .15rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main .banner .editor .line::before {
+    margin-right: 2.5rem;
+    counter-increment: line;
+    content: counter(line);
+    color: #5f5f5f;
+}
+
+main .banner .editor .line.indent-1::before {
+    margin-right: 4.5rem;
+}
+
+main .banner .editor .line.indent-2::before {
+    margin-right: 6.5rem;
+}
+
+main .banner .player-controller {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 3.5vw;
+    border-radius: 2.5px;
+    background-color: black;
+    z-index: 2;
+}
+
+main .banner .player-controller span.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: .5rem;
+}
+
+main .banner .player-controller span.play::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M16.394 12L10 7.737v8.526L16.394 12zm2.982.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+main .banner .player-controller input[type=range] {
+    -webkit-appearance: none;
+    width: 70%;
+}
+
+main .banner .player-controller input[type=range]:focus {
+    outline: none;
+}
+
+main .banner .player-controller input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: white;
+    border: none;
+}
+
+main .banner .player-controller input[type=range]::-webkit-slider-thumb {
+    height: 20px;
+    width: 10px;
+    background: var(--primary-col);
+    border: 2px solid black;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.5px;
+}
+
+main .banner .player-controller input[type=range]:focus::-webkit-slider-runnable-track {
+    background: white;
+}
+
+main .banner .player-controller .time {
+    color: white;
+    margin-right: .5rem;
+}
+
+main .banner .console,
+main .banner .browser {
+    position: absolute;
+    display: flex;
+    align-self: start;
+    justify-self: start;
+    flex-direction: column;
+    border-radius: 2.5px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.125) 0px 5px 15px;
+}
+
+main .banner .browser {
+    top: 30%;
+    right: 0;
+    height: 30%;
+    background-color: white;
+}
+
+main .banner .console {
+    bottom: 22.5%;
+    left: 20%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(2px);
+}
+
+main .banner .console nav,
+main .banner .browser nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 2.5px 2.5px 0 0;
+}
+
+main .banner .browser nav {
+    background-color: rgb(0, 0, 0);
+}
+
+main .banner .console nav p {
+    width: 80%;
+    color: white;
+    padding: .5rem 0;
+}
+
+main .banner .console p.input {
+    color: white;
+    margin-left: 1rem;
+}
+
+main .banner .console p.input span {
+    color: #f3cb50;
+}
+
+main .banner .console p.input::after {
+    content: "|";
+    margin-left: 0.5rem;
+    animation: clign 1s ease-in-out infinite;
+}
+
+@keyframes clign {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+main .banner .browser nav .hist,
+main .banner .console nav .dots,
+main .banner .browser nav .dots {
+    width: 7.5%;
+    padding: .5rem 0;
+    justify-content: space-between;
+}
+
+main .banner .browser nav .hist {
+    width: 12.5%;
+}
+
+main .banner .browser nav .hist span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .banner .browser nav .hist span::after {
+    content: "";
+    width: 8px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M8 12l6-6v12z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+main .banner .browser nav .hist span:nth-child(2):after {
+    transform: rotate(180deg);
+}
+
+main .banner .browser nav .hist span:nth-child(3):after {
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm4.82-4.924a7 7 0 1 0-1.852 1.266l-.975-1.755A5 5 0 1 1 17 12h-3l2.82 5.076z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+main .banner .browser nav input {
+    border: none;
+    width: 62.5%;
+}
+
+main .banner .image {
+    position: absolute;
+    bottom: 25%;
+    left: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.5%;
+    height: 30%;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.125) 0px 5px 15px;
+}
+
+main .banner .image img {
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+main .banner .chat {
+    position: absolute;
+    bottom: 7.5%;
+    right: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .banner .chat div {
+    border-radius: 2.5px;
+    padding: 1rem;
+    background-color: black;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+}
+
+main .banner .chat div:nth-child(2) {
+    margin: 1rem 0;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+main .banner .cursor {
+    position: absolute;
+    top: 60px;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 2.5px;
+    background: transparent;
+    color: #fff;
+    background-color: #2fcc71;
+}
+
+main .banner .cursor::after {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    content: "";
+    width: 32px;
+    height: 32px;
+    transform: rotate(-45deg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 8l6 6H6z' fill='rgba(47,204,113,1)'/%3E%3C/svg%3E");
+}
+
+main .banner div .cursor:nth-child(2) {
+    top: 25%;
+    left: 15%;
+    background-color: #cc2f2f;
+}
+
+main .banner div .cursor:nth-child(2):after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 8l6 6H6z' fill='rgb(204, 47, 47,1)'/%3E%3C/svg%3E");
+}

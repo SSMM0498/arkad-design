@@ -1,0 +1,101 @@
+@keyframes move1 {
+    0% {
+        top: 60px;
+        left: 35%;
+    }
+    10% {
+        top: 100px;
+        left: 55%;
+    }
+    20% {
+        top: 200px;
+        left: 75%;
+    }
+    30% {
+        top: 250px;
+        left: 75%;
+    }
+    40% {
+        top: 300px;
+        left: 85%;
+    }
+    50% {
+        top: 150px;
+        left: 75%;
+    }
+    60% {
+        top: 75px;
+        left: 50%;
+    }
+    70% {
+        top: 70px;
+        left: 50%;
+    }
+    80% {
+        top: 60px;
+        left: 40%;
+    }
+    90% {
+        top: 65px;
+        left: 35%;
+    }
+    100% {
+        top: 60px;
+        left: 35%;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        top: 25%;
+        left: 15%;
+    }
+    10% {
+        top: 35%;
+        left: 25%;
+    }
+    20% {
+        top: 55%;
+        left: 55%;
+    }
+    30% {
+        top: 55%;
+        left: 75%;
+    }
+    40% {
+        top: 55%;
+        left: 80%;
+    }
+    50% {
+        top: 55%;
+        left: 75%;
+    }
+    60% {
+        top: 45%;
+        left: 55%;
+    }
+    70% {
+        top: 40%;
+        left: 60%;
+    }
+    80% {
+        top: 10%;
+        left: 40%;
+    }
+    90% {
+        top: 5%;
+        left: 20%;
+    }
+    100% {
+        top: 25%;
+        left: 15%;
+    }
+}
+
+.cursor.first {
+    animation: move1 10s ease-in-out infinite reverse;
+}
+
+.cursor.second {
+    animation: move2 12.5s ease-in-out infinite reverse;
+}

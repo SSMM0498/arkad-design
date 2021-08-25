@@ -1,0 +1,103 @@
+body > footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vw;
+    background-color: white;
+}
+
+body.player > footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem 2.5rem;
+    margin-top: 0;
+    z-index: 2;
+    box-shadow: 2.5px 7.5px 25px 5px #0a0a0a2f;
+}
+
+body > footer > .footer-left {
+    display: flex;
+}
+
+body > footer > .footer-right {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > footer > .footer-left > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+body > footer > .footer-left > div > h3 {
+    color: var(--primary-col);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+body > footer > .footer-right > p {
+    margin-top: 1.5rem;
+}
+
+body > footer > .footer-left > div > .footer-links {
+    margin: .5rem 0;
+    margin-left: 100px;
+}
+
+body > footer > .footer-left > div > .footer-links > a {
+    color: var(--tertiary-col);
+    margin-right: 10px;
+}
+
+body.player > footer > .controller {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+body.player > footer > .controller > .timeline {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    margin-right: 25px;
+    background-color: var(--dgray-col);
+    cursor: pointer;
+}
+
+body.player > footer > .controller > .timeline > .progress {
+    width: 52%;
+    height: 10px;
+    background-color: var(--cyan-col);
+    cursor: pointer;
+}
+
+body.player > footer > .controller > .timeline > .progress-btn {
+    width: 5px;
+    height: 15px;
+    background-color: var(--tertiary-col);
+    cursor: pointer;
+}
+
+body.player > footer > .controller > .play,
+body.player > footer > .controller > .pause,
+body.player > footer > .controller > .option,
+body.player > footer > .controller > .fscreen {
+    background-color: transparent;
+    margin-right: 25px;
+    transition: all .25s ease-in-out;
+}
+
+body.player > footer > .controller > .play:hover,
+body.player > footer > .controller > .pause:hover,
+body.player > footer > .controller > .option:hover,
+body.player > footer > .controller > .fscreen:hover {
+    cursor: pointer;
+    opacity: .9;
+}

@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: var(--tertiary-col);
+}
+
+::selection {
+    color: white;
+    background: var(--tertiary-col);
+}
+
+*::-webkit-scrollbar {
+    position: fixed;
+    left: 0;
+    background: var(--gray-col);
+    border: none;
+    width: 7.5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--gray-col);
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: transparent
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-col);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    opacity: .9;
+}

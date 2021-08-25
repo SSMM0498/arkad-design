@@ -1,0 +1,58 @@
+section.infos {
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 25%;
+    margin: 1rem 0;
+}
+
+section.infos .kast-infos {
+    display: flex;
+    background-color: white;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+}
+
+section.infos .author-infos {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+}
+
+section.infos .kast-infos .dot.seperator::before {
+    content: "•";
+    display: block;
+    margin: 0 0.75rem;
+}
+
+section.infos .author-infos img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+    margin-right: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+section.infos .author-infos a {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+section.description {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0 0;
+}
+
+section.infos .slide {
+    width: 30%;
+}

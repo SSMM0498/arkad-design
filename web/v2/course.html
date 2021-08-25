@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="alt">
+    <header>
+        <div class="logo">akrad</div>
+        <nav class="menu">
+            <span>Explore</span>
+            <span>Trending</span>
+            <span>Blog</span>
+        </nav>
+        <div class="profile">
+            <button class="btn second">Log in</button>
+            <button class="btn">Try for free</button>
+        </div>
+    </header>
+    <main class="wide">
+        <style>
+            body::before {
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::before {
+                left: 2.5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::after {
+                left: 5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            body::after {
+                top: -25vh;
+                right: -25vh;
+                width: 50vh;
+                height: 50vh;
+                opacity: .35;
+                background-color: var(--secondary-col);
+            }
+
+            main::after {
+                top: auto;
+                bottom: -10vh;
+                right: 20%;
+                width: 20vh;
+                height: 20vh;
+                opacity: .125;
+                background-color: var(--cyan-col);
+            }
+        </style>
+        <section class="player-wrapper">
+            <h2>Redimensionnement en drag'n drop</h2>
+            <div class="player">
+                <aside class="sidebar editorbar">
+                    <span class="dots">
+                        <span></span><span></span><span></span>
+                    </span>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                </aside>
+                <div class="editor">
+                    <div class="tabs">
+                        <div class="tab active">index.vue</div>
+                        <div class="tab">style.css</div>
+                        <div class="tab">main.js</div>
+                    </div>
+                    <div class="metas">
+                        <img src="../img/avatar.jpg" alt="" class="avatar">
+                    </div>
+                    <div class="text">
+                        <p class="line tag">&lt;template &gt;</p>
+                        <p class="line indent-1">&lt;span v-if="date" &gt;</p>
+                        <p class="line indent-2">{{ date.getMonth() }}</p>
+                        <p class="line indent-1">&lt;/span &gt;</p>
+                        <p class="line tag active">&lt;/template &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;script &gt;</p>
+                        <p class="line indent-1">export default {</p>
+                        <p class="line indent-2">name: "Month" </p>
+                        <p class="line indent-2">props: {</p>
+                        <p class="line indent-2">date: { type: Date } </p>
+                        <p class="line indent-2">}</p>
+                        <p class="line indent-1">}</p>
+                        <p class="line tag">&lt;/script &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;style lang="scss" scoped &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;/style &gt;</p>
+                    </div>
+                </div>
+                <aside class="sidebar communitybar">
+                    <span class="dots">
+                        <span></span><span></span><span></span>
+                    </span>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                </aside>
+                <div class="browser">
+                    <nav>
+                        <span class="dots">
+                            <span></span><span></span><span></span>
+                        </span>
+                        <div class="hist">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <input type="text" class="search" placeholder="https://url">
+                    </nav>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <div class="console">
+                    <nav>
+                        <span class="dots">
+                            <span></span><span></span><span></span>
+                        </span>
+                        <p>Terminal</p>
+                    </nav>
+                    <p class="input">root:~<span>$</span></p>
+                </div>
+                <div class="player-controller">
+                    <span class="play"></span>
+                    <span class="sound"></span>
+                    <input class="time-range" type="range">
+                    <span class="time">03 : 56</span>
+                    <span class="full"></span>
+                    <span class="more"></span>
+                </div>
+                <div class="cursors">
+                    <div class="cursor second"></div>
+                </div>
+            </div>
+        </section>
+        <section class="infos">
+            <div class="kast-infos">
+                <div class="date">24 Aug 2021</div>
+                <span class="dot seperator"></span>
+                <div class="views">1,5K views</div>
+            </div>
+            <div class="slide">
+                <span class="tag orange">HTML</span>
+                <span class="tag lblue">CSS</span>
+                <span class="tag yellow">Javascript</span>
+                <span class="tag">UI</span>
+            </div>
+            <div class="author-infos">
+                <img src="../img/portrait.jpg" alt="" class="avatar">
+                <a href="#" class="name">Grafikart</a>
+                <div class="btn small">Subscribe</div>
+            </div>
+        </section>
+        <section class="description">
+            <p>
+                Eaque nesciunt tempore cumque aut eum est ullam id earum. Culpa eligendi voluptatem voluptatibus. Dolore
+                fugit possimus modi rerum minus odit commodi omnis omnis. Nulla sit et temporibus laborum iste
+                enim.<br><br>
+                Corporis neque magnam quo reprehenderit at adipisci. Odit excepturi quo dolore id sit recusandae nihil
+                asperiores. Asperiores et sunt est nihil et voluptatum est aut dolor. Accusantium saepe explicabo
+                inventore. Distinctio sed dolore rerum. Maiores ut rem explicabo dolore iusto totam quos qui ut.<br><br>
+                Quod nihil quia et voluptatem. Qui ex voluptate. Laudantium ex saepe saepe voluptas. Officia est
+                necessitatibus asperiores qui voluptatem sit. Excepturi in nisi officia quod. Quis eum odit occaecati
+                quia aut.
+            </p>
+        </section>
+        <section class="grid">
+            <div class="card">
+                <header>
+                    <h3>Redimensionnement en drag'n drop</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Provident dolorum autem doloremque sed iure consequatur exercitationem. Fugiat in sed at
+                        molestiae omnis atque ad ea.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">58 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Sapiente consectetur et culpa.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Nisi ut tempora. Quaerat perferendis delectus labore recusandae. Quibusdam mollitia incidunt
+                        doloribus vel earum qui non.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">62 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Ut inventore corrupti deleniti aut facilis</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Quaerat modi sunt iste. Ullam sed expedita omnis et quae consequatur. Quia incidunt iusto qui
+                        aut atque excepturi. Est nemo eum sint.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">64 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Voluptatem reiciendis nihil aut exercitationem.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Sequi eum natus corporis sint dolor vel officiis architecto sint. Eos officiis itaque aut at.
+                        Sint vero optio. Ut sint occaecati.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">50 min</div>
+                </footer>
+            </div>
+        </section>
+        <!-- <section class="comment-wrapper">
+            <style>
+                section.comment-wrapper {
+                    width: 50% !important;
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                section.comment-wrapper .comment-count {
+                    color: #444444;
+                    font-weight: 700;
+                    font-size: .95rem;
+                    text-transform: uppercase;
+                }
+
+                section.comment-wrapper .comment-list {
+                    list-style: none;
+                    margin: 20px auto;
+                }
+
+                section.comment-wrapper .comment .infos {
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: 40px auto;
+                    grid-template-rows: 18px 12px;
+                }
+
+                section.comment-wrapper .comment .infos img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 3px;
+                    overflow: hidden;
+                    grid-column: 1;
+                    grid-row: 1/span 2;
+                    justify-content: start;
+                }
+
+                section.comment-wrapper .comment .infos .name {
+                    max-width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #2c2c2c;
+                    grid-column: 2;
+                    margin: 0;
+                    line-height: 1;
+                }
+
+                section.comment-wrapper .comment .infos .time {
+                    grid-row: 2;
+                    font-size: .8em;
+                    text-transform: none;
+                    line-height: 15px;
+                    color: #2c2c2c;
+                    grid-column: 2;
+                    margin: 0;
+                    line-height: 1;
+                }
+
+                section.comment-wrapper .comment .infos .btn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                section.comment-wrapper .comment .content {
+                    font-size: 1rem;
+                    margin: 4px 14px;
+                    padding: 10px 0 20px 24px;
+                    border-left: 1px solid var(--primary-col);
+                    word-break: break-word;
+                }
+
+                section.comment-wrapper .comment .content > a.kast-link {
+                    text-decoration: none;
+                    color: var(--dprimary-col);
+                    border-bottom: 1px solid var(--primary-col);
+                }
+                section.comment-wrapper .comment .content > a.kast-link::after {
+                    content: "";
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    margin-left: .15rem;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='15' height='15'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM10.622 8.415l4.879 3.252a.4.4 0 0 1 0 .666l-4.88 3.252a.4.4 0 0 1-.621-.332V8.747a.4.4 0 0 1 .622-.332z' fill='rgba(132,90,247,1)'/%3E%3C/svg%3E");
+                }
+            </style>
+            <p class="comment-count">
+                5 COMMENTS
+            </p>
+            <ul class="comment-list">
+                <li class="comment">
+                    <div class="infos">
+                        <img src="../img/avatar.jpg" alt="" class="avatar">
+                        <a href="#" class="name">Bulah88</a>
+                        <div class="time">
+                            3 days ago
+                        </div>
+                        <button class="btn small">Reply</button>
+                    </div>
+                    <div class="content">
+                        Neque eos omnis <a href="#" class="kast-link">dolor</a>. Eum molestias voluptatum earum.
+                    </div>
+                </li>
+                <li class="comment">
+                    <div class="infos">
+                        <img src="../img/avatar.jpg" alt="" class="avatar">
+                        <a href="#" class="name">Glenda_Quitzon32</a>
+                        <div class="time">
+                            3 days ago
+                        </div>
+                        <button class="btn small">Reply</button>
+                    </div>
+                    <div class="content">
+                        Nemo illo totam dolores illo. Quas porro accusamus distinctio et odio temporibus vero. Quia eos
+                        doloremque ipsa consectetur consequatur velit. Dolorem esse error iusto qui quo tempore
+                        cupiditate. Deleniti <a href="#" class="kast-link">possimus</a> est iusto aliquam quo excepturi. Facilis omnis repellendus ullam.
+                    </div>
+                </li>
+                <li class="comment">
+                    <div class="infos">
+                        <img src="../img/avatar.jpg" alt="" class="avatar">
+                        <a href="#" class="name">Amos73</a>
+                        <div class="time">
+                            3 days ago
+                        </div>
+                        <button class="btn small">Reply</button>
+                    </div>
+                    <div class="content">
+                        Laudantium dolor voluptate aut voluptatibus. Quasi accusantium harum autem quibusdam asperiores.
+                        Beatae nesciunt ut.
+                    </div>
+                </li>
+                <li class="comment">
+                    <div class="infos">
+                        <img src="../img/avatar.jpg" alt="" class="avatar">
+                        <a href="#" class="name">Alba56</a>
+                        <div class="time">
+                            3 days ago
+                        </div>
+                        <button class="btn small">Reply</button>
+                    </div>
+                    <div class="content">
+                        Doloremque est rerum blanditiis facilis. Eius iste qui soluta eius fugiat est temporibus
+                        repellendus quod.
+                    </div>
+                </li>
+                <li class="comment">
+                    <div class="infos">
+                        <img src="../img/avatar.jpg" alt="" class="avatar">
+                        <a href="#" class="name">Chyna.Bergstrom
+                        </a>
+                        <div class="time">
+                            3 days ago
+                        </div>
+                        <button class="btn small">Reply</button>
+                    </div>
+                    <div class="content">
+                        Nostrum voluptas sed neque quia natus maxime deserunt occaecati voluptatem. Nesciunt omnis eum
+                        qui aliquid pariatur. Assumenda eaque harum dolorum harum. Ratione aut tempora quaerat nihil
+                        quam quidem fuga odit repellat. Molestiae est alias.
+                    </div>
+                </li>
+            </ul>
+        </section> -->
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div>
+                <h3>Arkad</h3>
+                <h3>Social</h3>
+                <h3>Activity</h3>
+            </div>
+            <div>
+                <nav class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Shop</a>
+                </nav>
+                <nav class="footer-links">
+                    <a href="#">Youtube</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Reddit</a>
+                    <a href="#">Instagram</a>
+                </nav>
+                <nav class="footer-links">
+                    <a href="#">Topics</a>
+                    <a href="#">Challenges</a>
+                    <a href="#">Code of conduct</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-right">
+            <img class="logo" src="../web/img/logo.0.png" alt="">
+            <p>Copyright ©️ 2021 <br /> made with ❤️ by ssmm0498</p>
+        </div>
+    </footer>
+</body>
+
+</html>
