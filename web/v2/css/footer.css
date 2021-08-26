@@ -1,5 +1,6 @@
 body > footer {
     display: flex;
+    justify-self: flex-end;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -8,8 +9,6 @@ body > footer {
 }
 
 body.player > footer {
-    position: fixed;
-    bottom: 0;
     padding: 1rem 2.5rem;
     margin-top: 0;
     z-index: 2;

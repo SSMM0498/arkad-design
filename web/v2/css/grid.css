@@ -24,7 +24,7 @@ main section.grid .hero {
 
 main section.grid .hero .filters {
     display: flex;
-    width: 40%;
+    width: 45%;
     padding-top: 1rem;
     align-items: center;
     justify-content: space-between;

@@ -48,9 +48,16 @@ section.infos .author-infos a {
 }
 
 section.description {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin: 2rem 0 0;
+}
+
+section.description p {
+    display: flex;
+    margin-bottom: .75rem;
 }
 
 section.infos .slide {

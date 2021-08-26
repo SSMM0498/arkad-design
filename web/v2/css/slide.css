@@ -46,4 +46,10 @@
     font-weight: bold;
     color: var(--primary-col);
 }
+
+.slide>.tag.add::before {
+    content: "+";
+    margin-right: 0;
+    font-style: normal;
+}
 .slide>.tag.tag.yellow::before, .slide>.tag.green::before,.slide>.tag.lgreen::before { color: var(--dprimary-col); }

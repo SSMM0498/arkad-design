@@ -10,7 +10,7 @@
 /* Colors */
 :root {
     --primary-col: #a9a0fa;
-    --dprimary-col:#5a52a0;
+    --dprimary-col:#453e85;
     --secondary-col: #f3cb50;
     --tertiary-col: #845af7;
 
@@ -18,10 +18,11 @@
     --dgray-col: #aaaaaa;
     --dgray-col-t: #b3b3b3b3;
 
-    --yellow-col: #F3CB51;
+    --yellow-col: rgb(243, 203, 81);
     --cyan-col: #00d6e7;
-    --green-col: #00e788;
-    --red-col: #fe2222;
+    --alert: rgb(254, 34, 34);
+    --warning: rgb(243, 203, 81);
+    --success: #00e788;
 }
 
 .pcol {
@@ -83,6 +84,7 @@
 /* Font and typography */
 :root {
     --body-font: Inter;
+    --body-font-alt: "Open Sans";
     --hero-font-sz: 3rem;
     --title-font-sz: 2rem;
     --subtitle-font-sz: 1.75rem;
