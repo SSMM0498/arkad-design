@@ -1,0 +1,105 @@
+.sidebar-content.discussion {
+    display: flex;
+    width: 45% !important;
+    flex-direction: column;
+    padding: 1rem .5rem;
+    margin-right: 6px;
+}
+
+div.comment-wrapper {
+    width: 100% !important;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 .5rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+div.comment-wrapper .comment-count {
+    color: #606468;
+    font-weight: 700;
+    font-size: .95rem;
+    text-transform: uppercase;
+}
+
+div.comment-wrapper .comment-list {
+    list-style: none;
+    height: 90%;
+    margin: 20px auto;
+}
+
+div.comment-wrapper .comment {
+    border: 2px solid white;
+    border-radius: 2.5px;
+    padding: .75rem;
+    margin-bottom: 0.5rem;
+}
+
+div.comment-wrapper .comment .infos {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 18px 12px;
+    gap: 3px;
+}
+
+div.comment-wrapper .comment .infos img {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    overflow: hidden;
+    grid-column: 1;
+    grid-row: 1/span 2;
+    justify-content: start;
+}
+
+div.comment-wrapper .comment .infos .name {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #606468;
+    grid-column: 2;
+    margin: 0;
+    line-height: 1;
+}
+
+div.comment-wrapper .comment .infos .time {
+    grid-row: 2;
+    font-size: .8em;
+    text-transform: none;
+    line-height: 15px;
+    color: #606468;
+    grid-column: 2;
+    margin: 0;
+    line-height: 1;
+}
+
+div.comment-wrapper .comment .infos .btn {
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    border-top-right-radius: 0;
+}
+
+div.comment-wrapper .comment .content {
+    font-size: 1rem;
+    margin: 4px 14px;
+    padding: .25rem;
+    word-break: break-word;
+}
+
+div.comment-wrapper .comment .content > a.kast-link {
+    text-decoration: none;
+    color: var(--dprimary-col);
+    border-bottom: 1px solid var(--primary-col);
+}
+
+div.comment-wrapper .comment .content > a.kast-link::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: .15rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='15' height='15'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM10.622 8.415l4.879 3.252a.4.4 0 0 1 0 .666l-4.88 3.252a.4.4 0 0 1-.621-.332V8.747a.4.4 0 0 1 .622-.332z' fill='rgba(132,90,247,1)'/%3E%3C/svg%3E");
+}

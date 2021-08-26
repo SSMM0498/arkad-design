@@ -1,0 +1,52 @@
+.sidebar-content.chapterlist,
+.sidebar-content.notelist {
+    display: flex;
+    width: 30% !important;
+    flex-direction: column;
+    padding: 1rem .5rem;
+}
+
+.sidebar-content.notelist {
+    margin-right: 6px;
+}
+
+.sidebar-content.chapterlist {
+    width: calc(30% + var(--header-h)) !important;
+}
+
+.sidebar-content.chapterlist h5,
+.sidebar-content.notelist h5,
+.sidebar-content.chapterlist p,
+.sidebar-content.notelist p {
+    margin-bottom: .5rem;
+}
+
+.sidebar-content.chapterlist button {
+    margin-bottom: 0.75rem;
+}
+
+.sidebar-content.chapterlist .chapter,
+.sidebar-content.notelist .note {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: .25rem;
+    border-radius: 2.5px;
+    margin-bottom: 6px;
+    background-color: var(--dprimary-col);
+    color: white;
+    font-style: 0.9rem;
+}
+
+.sidebar-content.chapterlist .chapter .name span,
+.sidebar-content.notelist .note .name span {
+    color: var(--secondary-col);
+}
+
+.sidebar-content.chapterlist .chapter .time,
+.sidebar-content.notelist .note .time {
+    font-weight: bold;
+    color: var(--primary-col);
+    font-size: .8rem;
+}

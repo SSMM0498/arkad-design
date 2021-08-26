@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="alt">
+    <header>
+        <div class="logo">arkad</div>
+        <nav class="menu">
+            <span>Explore</span>
+            <span>Trending</span>
+            <span>Search</span>
+        </nav>
+        <div class="profile">
+            <button class="btn second">Log in</button>
+            <button class="btn">Try for free</button>
+        </div>
+    </header>
+    <main class="wide">
+        <style>
+            body::before {
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::before {
+                left: 2.5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::after {
+                left: 5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            body::after {
+                top: -25vh;
+                right: -25vh;
+                width: 50vh;
+                height: 50vh;
+                opacity: .35;
+                background-color: var(--secondary-col);
+            }
+
+            main::after {
+                top: auto;
+                bottom: -10vh;
+                right: 20%;
+                width: 20vh;
+                height: 20vh;
+                opacity: .125;
+                background-color: var(--cyan-col);
+            }
+
+
+            section.player-wrapper .player:hover .sidebar-content {
+                height: 100% !important;
+            }
+
+            section.player-wrapper .player:hover .sidebar {
+                height: 100% !important;
+            }
+
+            section.player-wrapper .player:hover .editor {
+                height: 100% !important;
+            }
+        </style>
+        <section class="player-wrapper">
+            <div class="player">
+                <aside class="sidebar editorbar">
+                    <span class="dots">
+                        <span></span><span></span><span></span>
+                    </span>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="bottom"></span>
+                    </nav>
+                </aside>
+                <div class="file-tree sidebar-content">
+                    <h5>My files</h5>
+                    <div class="tools">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="folder open">
+                        <span>style</span>
+                        <div class="folder"><span>layout</span>
+                            <div class="file"><span>header.css</span></div>
+                            <div class="file"><span>footer.css</span></div>
+                        </div>
+                        <div class="file"><span>style.css</span></div>
+                    </div>
+                    <div class="folder">
+                        <span>script</span>
+                    </div>
+                    <div class="file active">
+                        <span>index.html</span>
+                    </div>
+                </div>
+                <div class="editor">
+                    <div class="tabs">
+                        <div class="tab active">index.vue</div>
+                        <div class="tab">style.css</div>
+                        <div class="tab">main.js</div>
+                    </div>
+                    <style>
+                        section.player-wrapper .player .editor .metas .timer {
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            right: 6px;
+                            color: white;
+                            z-index: 0;
+                        }
+
+                        section.player-wrapper .player .editor .metas .timer::before {
+                            content: "";
+                            display: block;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            width: 24px;
+                            height: 24px;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8h4v2h-6V7h2v5z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+                            cursor: pointer;
+                        }
+                    </style>
+                    <div class="metas">
+                        <span class="timer">01:10:05</span>
+                    </div>
+                    <div class="text" contenteditable="true">
+                        <p class="line tag">&lt;template &gt;</p>
+                        <p class="line indent-1">&lt;span v-if="date" &gt;</p>
+                        <p class="line indent-2">{{ date.getMonth() }}</p>
+                        <p class="line indent-1">&lt;/span &gt;</p>
+                        <p class="line tag active">&lt;/template &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;script &gt;</p>
+                        <p class="line indent-1">export default {</p>
+                        <p class="line indent-2">name: "Month" </p>
+                        <p class="line indent-2">props: {</p>
+                        <p class="line indent-2">date: { type: Date } </p>
+                        <p class="line indent-2">}</p>
+                        <p class="line indent-1">}</p>
+                        <p class="line tag">&lt;/script &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;style lang="scss" scoped &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;/style &gt;</p>
+                    </div>
+                </div>
+                <style>
+                    .sidebar-content.video-box {
+                        display: flex;
+                        width: 30% !important;
+                        flex-direction: column;
+                        padding: 1rem .5rem;
+                        margin-right: 6px;
+                    }
+
+                    .sidebar-content.video-box .video {
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        margin-bottom: 1rem;
+                    }
+
+                    .sidebar-content.video-box .video .details {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-bottom: .5rem;
+                    }
+
+                    .sidebar-content.video-box .video .name {
+                        font-size: 1.1rem;
+                    }
+
+                    .sidebar-content.video-box .video .role {
+                        background-color: white;
+                        color: black;
+                        padding: .25rem;
+                        font-size: .9rem;
+                        border-radius: 2.5px;
+                        opacity: .9;
+                    }
+
+                    .sidebar-content.video-box .video:first-child .role {
+                        background-color: var(--dprimary-col);
+                        color: white;
+                    }
+
+                    .sidebar-content.video-box img,
+                    .sidebar-content.video-box video {
+                        border-radius: 5px;
+                        object-fit: cover;
+                        width: 100%;
+                        aspect-ratio: 16/9;
+                        height: auto;
+                    }
+
+                    .sidebar-content.video-box img {
+                        border-left: 5px solid rgba(245, 46, 46, 1);
+                    }
+
+                    .sidebar-content.video-box video {
+                        border-left: 5px solid rgb(243, 203, 81);
+                    }
+                </style>
+                <div class="video-box sidebar-content">
+                    <div class="video">
+                        <div class="details">
+                            <span class="name">Ismael</span>
+                        </div>
+                        <video autoplay loop="true" src="../img/cam.mp4"></video>
+                    </div>
+                </div>
+                <aside class="sidebar communitybar record">
+                    <span class="dots">
+                        <span></span><span></span><span></span>
+                    </span>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                </aside>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

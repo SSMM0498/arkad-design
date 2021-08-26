@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="alt">
+    <header>
+        <div class="logo">arkad</div>
+        <nav class="menu">
+            <span>Explore</span>
+            <span>Trending</span>
+            <span class="search">
+                <input type="search" placeholder="Search">
+            </span>
+        </nav>
+        <div class="profile">
+            <button class="btn second">Log in</button>
+            <button class="btn">Try for free</button>
+        </div>
+    </header>
+    <main class="channel wide">
+        <style>
+            body::before {
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::before {
+                left: 2.5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::after {
+                left: 5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            body::after {
+                top: -25vh;
+                right: -25vh;
+                width: 50vh;
+                height: 50vh;
+                opacity: .35;
+                background-color: var(--secondary-col);
+            }
+
+            main::after {
+                top: auto;
+                bottom: -10vh;
+                right: 20%;
+                width: 20vh;
+                height: 20vh;
+                opacity: .125;
+                background-color: var(--cyan-col);
+            }
+
+
+            section.player-wrapper .player.live:hover .sidebar-content {
+                height: 100% !important;
+            }
+
+            section.player-wrapper .player.live:hover .sidebar {
+                height: 100% !important;
+            }
+
+            section.player-wrapper .player.live:hover .editor {
+                height: 100% !important;
+            }
+        </style>
+        <style>
+            main.channel section.channel-banner {
+                justify-content: start;
+                flex-direction: row !important;
+                width: 100%;
+                height: 20vh;
+                border-bottom: 1px solid var(--tertiary-col);
+                background-color: rgba(0, 0, 0, 0.1);
+                margin-bottom: 1rem;
+            }
+
+            main.channel section.channel-banner h2 span {
+                color: var(--dprimary-col);
+            }
+            
+            main.channel section.channel-banner img {
+                margin-left: 2rem;
+                margin-right: 1rem;
+                width: 96px;
+                height: 96px;
+                border-radius: 96px;
+                object-fit: cover;
+                object-position: center;
+                box-shadow: rgba(0, 0, 0, 0.125) 0px 5px 10px;
+            }
+            
+            main.channel section.channel-banner .btn {
+                position: absolute;
+                right: 2rem;
+            }
+
+            main.channel section.grid {
+                margin-top: .25rem;
+            }
+
+            main.channel section.channel-banner .metas {
+                margin-right: 5rem;
+            }
+
+            main.channel section.channel-banner .search {
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+                font-size: 1.25rem;
+                width: 40%;
+                border-radius: 2.5px;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            
+            main.channel section.channel-banner .search::before {
+                content: "";
+                display: block;
+                width: 32px;height: 32px;
+                margin-right: 1rem;
+                opacity: 0.5;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z'/%3E%3C/svg%3E");
+            }
+            
+            main.channel section.channel-banner .search input {
+                padding: 1rem 0;
+                width: 100%;
+                background-color: transparent;
+                outline: none;
+            }
+            
+            main.channel section.channel-banner .search:focus-within {
+                background-color: rgba(255, 255, 255, 0.75);
+            }
+        </style>
+        <section class="channel-banner">
+            <img src="../img/portrait.jpg" alt="" class="avatar">
+            <div class="metas">
+                <h2>Chaine de <span>Grafikart</span></h2>
+                <span class="subscriber-nb">300K Subscribers</span>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search a kast...">
+            </div>
+            <div class="btn">Subscribe</div>
+        </section>
+        <section class="grid">
+            <div class="hero">
+                <div class="filters">
+                    <span class="tag">Trier | Date de sortie</span>
+                    <span class="tag">Niveau | Débutant</span>
+                    <span class="tag">Technos | Toutes</span>
+                    <span class="tag">Type | Tous</span>
+                </div>
+            </div>
+            <div class="card stacked">
+                <header>
+                    <h3>Redimensionnement en drag'n drop</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Provident dolorum autem doloremque sed iure consequatur exercitationem. Fugiat in sed at
+                        molestiae omnis atque ad ea.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:100%"></span>
+                    </div>
+                    <div class="time">58 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Sapiente consectetur et culpa.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Nisi ut tempora. Quaerat perferendis delectus labore recusandae. Quibusdam mollitia incidunt
+                        doloribus vel earum qui non.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">62 min</div>
+                </footer>
+            </div>
+            <div class="card stacked">
+                <header>
+                    <h3>Ut inventore corrupti deleniti aut facilis</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Quaerat modi sunt iste. Ullam sed expedita omnis et quae consequatur. Quia incidunt iusto qui
+                        aut atque excepturi. Est nemo eum sint.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">64 min</div>
+                </footer>
+            </div>
+            <div class="card stacked">
+                <header>
+                    <h3>Voluptatem reiciendis nihil aut exercitationem.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Sequi eum natus corporis sint dolor vel officiis architecto sint. Eos officiis itaque aut at.
+                        Sint vero optio. Ut sint occaecati.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:50%"></span>
+                    </div>
+                    <div class="time">50 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Earum voluptatem iure hic est.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Quia accusamus excepturi harum provident in esse vel esse. Omnis aspernatur sed vel non quidem
+                        aut quo qui.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">68 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Officiis in hic vel doloremque maxime eveniet ut eum.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Omnis autem voluptatibus. Reprehenderit impedit impedit odit expedita. Earum molestiae possimus
+                        consequuntur eos aut nihil omnis.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:24%"></span>
+                    </div>
+                    <div class="time">24 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Dolorem voluptatem incidunt culpa ut labore minus.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Sequi assumenda nihil dolores id ad laudantium. Laudantium quidem aut ut et rerum. Fugiat dicta
+                        quia voluptas ex quia odit illo.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:34%"></span>
+                    </div>
+                    <div class="time">34 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Nam ex aut minima eius rerum deleniti dolorem quisquam.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Ut ullam rerum est. Voluptatum in suscipit id ut impedit. Deserunt et voluptas vero et quas
+                        maxime mollitia inventore. Quia commodi.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">64 min</div>
+                </footer>
+            </div>
+            <div class="card stacked">
+                <header>
+                    <h3>Neque voluptatem excepturi qui repellat eum labore delectus ut.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Quia optio hic vitae soluta nemo suscipit debitis. Dolores aspernatur eos nihil aut ex quam
+                        dolor ratione magni.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">94 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Odit porro animi eveniet distinctio ipsa est est fuga.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Dicta itaque culpa deserunt molestias illo occaecati quaerat consectetur. Nesciunt et porro.
+                        Cupiditate expedita est sed ut.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">96 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Officia beatae repudiandae reiciendis provident voluptatem.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Aut maiores dolor sit et at. Omnis et tempora fugiat laboriosam quasi. Unde modi id eos
+                        doloribus cupiditate dolores officia dolor.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:27%"></span>
+                    </div>
+                    <div class="time">27 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Deleniti magni repudiandae voluptatem sunt laborum alias.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Repellendus id minima beatae ullam officia officiis consequatur ipsam ratione. Ut earum quo
+                        culpa voluptatum adipisci.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:25%"></span>
+                    </div>
+                    <div class="time">25 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Ea molestiae molestiae similique voluptas.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Placeat a non et voluptatibus alias omnis molestias similique voluptatem. Ullam ducimus
+                        corrupti. Doloremque voluptas sed porro et.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">62 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Doloribus qui sed repellendus blanditiis praesentium quia eum quos.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Quis illum aut consequatur aut tempore natus. Voluptatum quo aut rem. Dignissimos quam in amet
+                        et. Qui soluta asperiores esse eveniet.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">44 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Dignissimos aut rem labore.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Tempora aperiam voluptatem quas dolorem est totam voluptatem. Consectetur eaque veritatis et
+                        autem ullam voluptas distinctio.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:30%"></span>
+                    </div>
+                    <div class="time">30 min</div>
+                </footer>
+            </div>
+            <div class="card empty">
+                <h3>Load more</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div>
+                <h3>Arkad</h3>
+                <h3>Social</h3>
+                <h3>Activity</h3>
+            </div>
+            <div>
+                <nav class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Shop</a>
+                </nav>
+                <nav class="footer-links">
+                    <a href="#">Youtube</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Reddit</a>
+                    <a href="#">Instagram</a>
+                </nav>
+                <nav class="footer-links">
+                    <a href="#">Topics</a>
+                    <a href="#">Challenges</a>
+                    <a href="#">Code of conduct</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-right">
+            <img class="logo" src="../web/img/logo.0.png" alt="">
+            <p>Copyright ©️ 2021 <br /> made with ❤️ by ssmm0498</p>
+        </div>
+    </footer>
+</body>
+
+</html>

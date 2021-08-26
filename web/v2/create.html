@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="alt">
+    <header>
+        <div class="logo">arkad</div>
+        <nav class="menu">
+            <span>Explore</span>
+            <span>Trending</span>
+            <span>Search</span>
+        </nav>
+        <div class="profile">
+            <img src="../img/avatar.jpg" class="avatar">
+            <button class="btn">Create</button>
+        </div>
+    </header>
+    <main class="creation wide">
+        <style>
+            body::before {
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::before {
+                left: 2.5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::after {
+                left: 5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            body::after {
+                top: -25vh;
+                right: -25vh;
+                width: 50vh;
+                height: 50vh;
+                opacity: .35;
+                background-color: var(--secondary-col);
+            }
+
+            main::after {
+                top: auto;
+                bottom: -10vh;
+                right: 20%;
+                width: 20vh;
+                height: 20vh;
+                opacity: .125;
+                background-color: var(--cyan-col);
+            }
+
+
+            section.player-wrapper .player.live:hover .sidebar-content {
+                height: 100% !important;
+            }
+
+            section.player-wrapper .player.live:hover .sidebar {
+                height: 100% !important;
+            }
+
+            section.player-wrapper .player.live:hover .editor {
+                height: 100% !important;
+            }
+        </style>
+        <style>
+            /* main.creation {
+                background-color: white;
+            } */
+
+            main.creation h1 {
+                color: var(--dprimary-col);
+                margin-bottom: 1rem;
+                align-self: start;
+                padding: 2.5rem 2rem;
+                width: 100%;
+                border-bottom: 1px solid var(--tertiary-col);
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            
+            main.creation h1::first-letter {
+                color: black;
+            }
+            
+            main.creation h2 {
+                margin-left: 2rem;
+                align-self: start;
+                margin-bottom: 1.5rem;
+            }
+            
+            main.creation h3 {
+                display: flex;
+                align-items: center;
+                align-self: start;
+                margin-left: 2rem;
+                outline: none;
+            }
+            
+            main.creation h3:focus {
+                padding-bottom: .5rem;
+                border-bottom: 1px solid black;
+            }
+            
+            main.creation h3 .field {
+                text-transform: uppercase;
+                font-weight: normal;
+                margin-right: 1rem;
+                padding-right: 1rem;
+                width: 150px;
+                font-size: 1.1rem;
+                border-right: 1px solid #000;
+            }
+            
+            main.creation .slide {
+                width: calc(100% - (150px + 1rem)) !important;
+            }
+            
+            main.creation .infos .field {
+                text-transform: uppercase;
+                font-weight: normal;
+                margin-right: 1rem;
+                padding-right: 1rem;
+                width: 150px;
+                font-size: 1.1rem;
+                border-right: 1px solid #000;
+            }
+            
+            main.creation .infos,
+            main.creation section.description {
+                flex-direction: row;
+            }
+            
+            main.creation section.description {
+                align-items: start;
+                margin: .5rem 0 !important;
+            }
+            
+            main.creation section.description .content {
+                display: block;
+                width: calc(100% - (150px + 1rem)) !important;
+            }
+
+            main.creation section.description .field {
+                display: flex;
+                text-transform: uppercase;
+                font-weight: normal;
+                margin-right: 1rem;
+                padding-right: 1rem;
+                width: 150px;
+                font-size: 1.1rem;
+                border-right: 1px solid #000;
+            }
+
+            main.creation .grid {
+                margin-top: 0;
+            }
+        </style>
+        <h1>ArKast Creation</h1>
+        <h2>Meta infos</h2>
+        <h3 contenteditable="true" ><span class="field">Title</span> Comparaison entre Typescript & Javascript</h3>
+        <section class="infos">
+            <span class="field">Tags</span>
+            <div class="slide">
+                <span class="tag add"></span>
+                <span class="tag yellow">Javascript</span>
+                <span class="tag blue">Typescript</span>
+            </div>
+        </section>
+        <section class="description">
+            <span class="field">Description</span>
+            <div class="content" contenteditable="true">
+                <p>
+                    Eaque nesciunt tempore cumque aut eum est ullam id earum. Culpa eligendi voluptatem voluptatibus. Dolore
+                    fugit possimus modi rerum minus odit commodi omnis omnis. Nulla sit et temporibus laborum iste
+                    enim.
+                </p>
+                <p>
+                    Corporis neque magnam quo reprehenderit at adipisci. Odit excepturi quo dolore id sit recusandae nihil
+                    asperiores. Asperiores et sunt est nihil et voluptatum est aut dolor. Accusantium saepe explicabo
+                    inventore. Distinctio sed dolore rerum. Maiores ut rem explicabo dolore iusto totam quos qui ut.
+                </p>
+                <p>
+                    Quod nihil quia et voluptatem. Qui ex voluptate. Laudantium ex saepe saepe voluptas. Officia est
+                    necessitatibus asperiores qui voluptatem sit. Excepturi in nisi officia quod. Quis eum odit occaecati
+                    quia aut.
+                </p>
+            </div>
+        </section>
+        <h2>Slides</h2>
+        <section class="grid">
+            <div class="card">
+                <img src="../img/slide.0.png" alt="" class="pic">
+            </div>
+            <div class="card">
+                <img src="../img/slide.1.png" alt="" class="pic">
+            </div>
+            <div class="card">
+                <img src="../img/slide.2.png" alt="" class="pic">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div>
+                <h3>Arkad</h3>
+                <h3>Social</h3>
+                <h3>Activity</h3>
+            </div>
+            <div>
+                <nav class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Shop</a>
+                </nav>
+                <nav class="footer-links">
+                    <a href="#">Youtube</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Reddit</a>
+                    <a href="#">Instagram</a>
+                </nav>
+                <nav class="footer-links">
+                    <a href="#">Topics</a>
+                    <a href="#">Challenges</a>
+                    <a href="#">Code of conduct</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-right">
+            <img class="logo" src="../web/img/logo.0.png" alt="">
+            <p>Copyright ©️ 2021 <br /> made with ❤️ by ssmm0498</p>
+        </div>
+    </footer>
+</body>
+
+</html>

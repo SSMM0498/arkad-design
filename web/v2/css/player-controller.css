@@ -1,0 +1,211 @@
+.cursor-infos {
+    position: absolute;
+    top: -11.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100px;
+    padding-bottom: 5px;
+    font-size: .9rem;
+    border-radius: 2.5px;
+    background-color: white;
+}
+
+.cursor-infos .thumb img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.cursor-infos .chapter {
+    margin-bottom: .125rem;
+}
+
+.cursor-infos .chapter .number {
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+.cursor-infos .timer {
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+section.player-wrapper .player .player-controller {
+    position: absolute;
+    bottom: calc(-1 * var(--header-h));
+    left: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 12px);
+    height: calc(var(--header-h) / 1.5);
+    border-radius: 2.5px;
+    background-color: rgb(0, 0, 0);
+    z-index: 3;
+    transition: bottom .5s ease-in-out 1s;
+}
+
+section.player-wrapper .player:hover .player-controller {
+    bottom: 6px;
+}
+
+section.player-wrapper .player:hover .sidebar {
+    height: calc(100% - (6px + var(--header-h) / 1.5));
+}
+
+section.player-wrapper .player:hover .editor {
+    height: calc(100% - (6px + var(--header-h) / 1.5));
+}
+
+section.player-wrapper .player .player-controller span.sound,
+section.player-wrapper .player .player-controller span.more,
+section.player-wrapper .player .player-controller span.full,
+section.player-wrapper .player .player-controller span.exit,
+section.player-wrapper .player .player-controller span.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+section.player-wrapper .player .player-controller span.play {
+    margin-left: .5rem;
+}
+
+section.player-wrapper .player .player-controller span.play::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M16.394 12L10 7.737v8.526L16.394 12zm2.982.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+section.player-wrapper .player .player-controller span.sound::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M10 7.22L6.603 10H3v4h3.603L10 16.78V7.22zM5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm13.517 4.134l-1.416-1.416A8.978 8.978 0 0 0 21 12a8.982 8.982 0 0 0-3.304-6.968l1.42-1.42A10.976 10.976 0 0 1 23 12c0 3.223-1.386 6.122-3.594 8.134zm-3.543-3.543l-1.422-1.422A3.993 3.993 0 0 0 16 12c0-1.43-.75-2.685-1.88-3.392l1.439-1.439A5.991 5.991 0 0 1 18 12c0 1.842-.83 3.49-2.137 4.591z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+section.player-wrapper .player .player-controller span.full::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+section.player-wrapper .player .player-controller span.exit::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+section.player-wrapper .player .player-controller span.more::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 3c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+    margin-right: .5rem;
+}
+
+section.player-wrapper .player .player-controller .time {
+    color: white;
+    margin-right: .5rem;
+}
+
+section.player-wrapper .player .player-controller .progress-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82.5%;
+    height: 5px;
+}
+
+section.player-wrapper .player .player-controller .progress-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.player-wrapper .player .player-controller .progress-line .part {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-right: 3px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: height .125s;
+}
+
+section.player-wrapper .player .player-controller .progress-line:hover .part {
+    height: 125%;
+}
+
+section.player-wrapper .player .player-controller .progress-line .part:hover {
+    height: 200%;
+    opacity: 0.75;
+}
+
+section.player-wrapper .player .player-controller .progress-line .part:hover:after {
+    top: -5px !important;
+}
+
+section.player-wrapper .player .player-controller .progress-line .part:last-child {
+    margin-right: 0;
+}
+
+section.player-wrapper .player .player-controller .progress-thumb {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: var(--primary-col);
+}
+
+section.player-wrapper .player .player-controller .progress-line .part .progress-level {
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-col);
+}
+
+section.player-wrapper .player .player-controller.editing .progress-line .part::after {
+    content: "";
+    position: absolute;
+    top: -7.5px;
+    margin-right: -3px;
+    right: 0;
+    display: block;
+    width: 3px;
+    height: 20px;
+    cursor: pointer;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    background-color: var(--secondary-col);
+}
+
+section.player-wrapper .player .player-controller .progress-line .part:nth-child(1) .progress-level,
+section.player-wrapper .player .player-controller .progress-line .part:nth-child(2) .progress-level {
+    width: 100%;
+}
+section.player-wrapper .player .player-controller .progress-line .part:nth-child(3) .progress-level {
+    width: 19%;
+}
