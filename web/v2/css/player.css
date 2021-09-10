@@ -62,7 +62,7 @@ section.player-wrapper .player::after {
     height: calc(100% + 6px);
     background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(3px);
-    z-index: 3;
+    z-index: 98;
     transition: all .3s ease-in-out;
 }
 
@@ -86,7 +86,7 @@ section.player-wrapper .player::before {
     height: 120px;
     transform: translateX(-20px);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='120' height='120'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M16.394 12L10 7.737v8.526L16.394 12zm2.982.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
-    z-index: 4;
+    z-index: 99;
     transition: all .3s ease-in-out;
 }
 
@@ -388,7 +388,7 @@ section.player-wrapper .player .browser nav input {
 }
 
 section.player-wrapper .player .cursors {
-    z-index: 100;
+    z-index: 97;
 }
 
 section.player-wrapper .player .cursor:not(.tagged) {

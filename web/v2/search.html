@@ -25,7 +25,7 @@
             <button class="btn">Try for free</button>
         </div>
     </header>
-    <main class="channel wide">
+    <main class="search wide">
         <style>
             body::before {
                 width: 2.5%;
@@ -76,16 +76,38 @@
                 height: 100% !important;
             }
         </style>
-        <section class="channel-banner">
-            <img src="../img/portrait.jpg" alt="" class="avatar">
-            <div class="metas">
-                <h2>Chaine de <span>Grafikart</span></h2>
-                <span class="subscriber-nb">300K Subscribers</span>
+        <style>
+            main.search section .slide {
+                width: calc(100% - 4rem);
+                margin-left: 2rem;
+            }
+
+            main.search section .search-word {
+                color: var(--dprimary-col);
+            }
+
+            main.search section.grid {
+                margin-top: 1rem !important;
+            }
+        </style>
+        <section class="search-banner">
+            <h2>Search result for : <span class="search-word">Loading spinner</span></h2>
+            <div class="slide">
+                <span class="tag orange">HTML</span>
+                <span class="tag lblue">CSS</span>
+                <span class="tag yellow">Javascript</span>
+                <span class="tag">UI</span>
+                <span class="tag blue">Typescript</span>
+                <span class="tag lblue-alt">ReactJS</span>
+                <span class="tag green">VueJS</span>
+                <span class="tag orange">SvelteJS</span>
+                <span class="tag lgreen">NodeJS</span>
+                <span class="tag">Database</span>
+                <span class="tag dblue">Python</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag pink">graphQL</span>
             </div>
-            <div class="search">
-                <input type="search" placeholder="Search a kast...">
-            </div>
-            <div class="btn">Subscribe</div>
         </section>
         <section class="grid">
             <div class="hero">
