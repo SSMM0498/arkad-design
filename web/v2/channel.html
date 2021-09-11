@@ -82,10 +82,54 @@
                 <h2>Chaine de <span>Grafikart</span></h2>
                 <span class="subscriber-nb">300K Subscribers</span>
             </div>
-            <div class="search">
-                <input type="search" placeholder="Search a kast...">
+            <div class="socials">
+                <div class="btn small">Subscribe</div>
+                <style>
+                    .socials {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .socials .btn {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 2rem;
+                    }
+
+                    .btn-icon {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 2px;
+                        background-color: #000;
+                        margin-right: .5rem;
+                        cursor: pointer;
+                    }
+
+                    .btn-icon:last-child {
+                        margin-right: 0;
+                    }
+
+                    .facebook {
+                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E") #000 no-repeat center;
+                    }
+
+                    .twitter {
+                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E") #000 no-repeat center;
+                    }
+
+                    .youtube {
+                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M19.606 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.5 6 12 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592C4.285 7.419 4 9.196 4 12s.285 4.58.394 5.006c.076.297.292.522.538.59C5.372 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592C19.715 16.581 20 14.8 20 12s-.285-4.58-.394-5.005zm1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5v-7l6 3.5-6 3.5z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E") #000 no-repeat center;
+                    }
+
+                    .github {
+                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E") #000 no-repeat center;
+                    }
+                </style>
+                <button class="btn-icon facebook"></button>
+                <button class="btn-icon twitter"></button>
+                <button class="btn-icon youtube"></button>
+                <button class="btn-icon github"></button>
             </div>
-            <div class="btn">Subscribe</div>
         </section>
         <section class="grid">
             <div class="hero">
@@ -93,7 +137,7 @@
                     <span class="tag">Trier | Date de sortie</span>
                     <span class="tag">Niveau | Débutant</span>
                     <span class="tag">Technos | Toutes</span>
-                    <span class="tag">Type | Tous</span>
+                    <span class="tag">Type | Playlist</span>
                 </div>
             </div>
             <div class="card stacked">
@@ -114,7 +158,7 @@
                     <div class="time">58 min</div>
                 </footer>
             </div>
-            <div class="card">
+            <div class="card stacked">
                 <header>
                     <h3>Sapiente consectetur et culpa.</h3>
                 </header>
@@ -168,7 +212,7 @@
                     <div class="time">50 min</div>
                 </footer>
             </div>
-            <div class="card">
+            <div class="card stacked">
                 <header>
                     <h3>Earum voluptatem iure hic est.</h3>
                 </header>
@@ -186,97 +230,7 @@
                     <div class="time">68 min</div>
                 </footer>
             </div>
-            <div class="card">
-                <header>
-                    <h3>Officiis in hic vel doloremque maxime eveniet ut eum.</h3>
-                </header>
-                <div class="body">
-                    <div class="icon"></div>
-                    <p class="description">
-                        Omnis autem voluptatibus. Reprehenderit impedit impedit odit expedita. Earum molestiae possimus
-                        consequuntur eos aut nihil omnis.
-                    </p>
-                </div>
-                <footer>
-                    <div class="progress">
-                        <span style="width:24%"></span>
-                    </div>
-                    <div class="time">24 min</div>
-                </footer>
-            </div>
-            <div class="card">
-                <header>
-                    <h3>Dolorem voluptatem incidunt culpa ut labore minus.</h3>
-                </header>
-                <div class="body">
-                    <div class="icon"></div>
-                    <p class="description">
-                        Sequi assumenda nihil dolores id ad laudantium. Laudantium quidem aut ut et rerum. Fugiat dicta
-                        quia voluptas ex quia odit illo.
-                    </p>
-                </div>
-                <footer>
-                    <div class="progress">
-                        <span style="width:34%"></span>
-                    </div>
-                    <div class="time">34 min</div>
-                </footer>
-            </div>
-            <div class="card">
-                <header>
-                    <h3>Nam ex aut minima eius rerum deleniti dolorem quisquam.</h3>
-                </header>
-                <div class="body">
-                    <div class="icon"></div>
-                    <p class="description">
-                        Ut ullam rerum est. Voluptatum in suscipit id ut impedit. Deserunt et voluptas vero et quas
-                        maxime mollitia inventore. Quia commodi.
-                    </p>
-                </div>
-                <footer>
-                    <div class="progress">
-                        <span style="width:0%"></span>
-                    </div>
-                    <div class="time">64 min</div>
-                </footer>
-            </div>
             <div class="card stacked">
-                <header>
-                    <h3>Neque voluptatem excepturi qui repellat eum labore delectus ut.</h3>
-                </header>
-                <div class="body">
-                    <div class="icon"></div>
-                    <p class="description">
-                        Quia optio hic vitae soluta nemo suscipit debitis. Dolores aspernatur eos nihil aut ex quam
-                        dolor ratione magni.
-                    </p>
-                </div>
-                <footer>
-                    <div class="progress">
-                        <span style="width:0%"></span>
-                    </div>
-                    <div class="time">94 min</div>
-                </footer>
-            </div>
-            <div class="card">
-                <header>
-                    <h3>Odit porro animi eveniet distinctio ipsa est est fuga.</h3>
-                </header>
-                <div class="body">
-                    <div class="icon"></div>
-                    <p class="description">
-                        Dicta itaque culpa deserunt molestias illo occaecati quaerat consectetur. Nesciunt et porro.
-                        Cupiditate expedita est sed ut.
-                    </p>
-                </div>
-                <footer>
-                    <div class="progress">
-                        <span style="width:0%"></span>
-                    </div>
-                    <div class="time">96 min</div>
-                </footer>
-            </div>
-            <div class="card">
                 <header>
                     <h3>Officia beatae repudiandae reiciendis provident voluptatem.</h3>
                 </header>
@@ -294,7 +248,7 @@
                     <div class="time">27 min</div>
                 </footer>
             </div>
-            <div class="card">
+            <div class="card stacked">
                 <header>
                     <h3>Deleniti magni repudiandae voluptatem sunt laborum alias.</h3>
                 </header>
@@ -312,7 +266,7 @@
                     <div class="time">25 min</div>
                 </footer>
             </div>
-            <div class="card">
+            <div class="card stacked">
                 <header>
                     <h3>Ea molestiae molestiae similique voluptas.</h3>
                 </header>
@@ -330,7 +284,7 @@
                     <div class="time">62 min</div>
                 </footer>
             </div>
-            <div class="card">
+            <div class="card stacked">
                 <header>
                     <h3>Doloribus qui sed repellendus blanditiis praesentium quia eum quos.</h3>
                 </header>
@@ -348,7 +302,7 @@
                     <div class="time">44 min</div>
                 </footer>
             </div>
-            <div class="card">
+            <div class="card stacked">
                 <header>
                     <h3>Dignissimos aut rem labore.</h3>
                 </header>
@@ -365,9 +319,6 @@
                     </div>
                     <div class="time">30 min</div>
                 </footer>
-            </div>
-            <div class="card empty">
-                <h3>Load more</h3>
             </div>
         </section>
     </main>

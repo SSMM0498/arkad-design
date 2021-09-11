@@ -170,3 +170,10 @@ main h6 {
     color: black;
     background-color: transparent;
 }
+
+.divider {
+    display: block;
+    width: calc(100% - 15rem);
+    height: 2px;
+    background-color: var(--primary-col);
+}
