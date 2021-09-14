@@ -2,7 +2,7 @@
     display: flex;
     width: 80%;
     height: 84vh;
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     margin-right: var(--gasp);
     padding: .5rem 0;
     box-shadow: var(--shadow);
@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: column;
     width: 75px;
-    border-right: 1px solid var(--dgray-col);
+    border-right: 1px solid var(--dgray);
 }
 
 .code-editor > .main-input {

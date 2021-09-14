@@ -6,7 +6,7 @@
     width: 20%;
     height: 84vh;
     margin-right: var(--gasp);
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     padding: calc(var(--gasp)/1.25);
     box-shadow: var(--shadow);
 }
@@ -36,7 +36,7 @@
 .side-bar > .side-bar-header > .action-btn {
     width: var(--gasp);
     height: var(--gasp);
-    background-color: var(--dgray-col);
+    background-color: var(--dgray);
     cursor: pointer;
 }
 
@@ -57,8 +57,8 @@
 
 .side-bar > .file-tree div span:hover {
     cursor: pointer;
-    color: var(--gray-col);
-    background-color: var(--dgray-col);
+    color: var(--gray);
+    background-color: var(--dgray);
     opacity: .75;
 }
 
@@ -107,7 +107,7 @@
     height: 15vh;
     align-items: flex-end;
     margin-bottom: var(--sz-3);
-    background-color: var(--dgray-col);
+    background-color: var(--dgray);
 }
 
 .comment-input > textarea {
@@ -142,7 +142,7 @@
 }
 
 .comment-box > .comment-reply {
-    border-left: 1px solid var(--dgray-col);
+    border-left: 1px solid var(--dgray);
     margin-top: var(--sz-1);
     padding-left: var(--sz-5);
 }

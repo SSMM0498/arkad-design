@@ -22,13 +22,13 @@
 *::-webkit-scrollbar {
     position: fixed;
     left: 0;
-    background: var(--gray-col);
+    background: var(--gray);
     border: none;
     width: 7.5px;
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--gray-col);
+    background: var(--gray);
 }
 
 *::-webkit-scrollbar-track:hover {

@@ -38,6 +38,7 @@ main.channel section.channel-banner img {
     box-shadow: rgba(0, 0, 0, 0.125) 0px 5px 10px;
 }
 
+main.channel section.channel-banner .creation,
 main.channel section.channel-banner .socials {
     position: absolute;
     right: 2rem;

@@ -72,7 +72,7 @@ main::after {
     height: 40vh;
     border-radius: 50vh;
     opacity: .125;
-    background-color: var(--cyan-col);
+    background-color: var(--cyan);
     z-index: -1;
 }
 
@@ -164,6 +164,10 @@ main h6 {
 
 .btn.small {
     padding: .25rem .5rem;
+}
+
+.btn.medium {
+    padding: .6rem;
 }
 
 .btn.second {

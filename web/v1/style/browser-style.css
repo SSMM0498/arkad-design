@@ -25,7 +25,7 @@
     cursor: move;
     background: #fffffff2;
     backdrop-filter: blur(2px);
-    border-bottom: .5px solid var(--gray-col);
+    border-bottom: .5px solid var(--gray);
 }
 
 .browser-column {
@@ -37,8 +37,8 @@
 .browser-nav {
     padding: .125rem .5rem;
     font-size: .75rem;
-    background-color: var(--gray-col);
-    color: var(--dgray-col);
+    background-color: var(--gray);
+    color: var(--dgray);
 }
 
 .browser-reload::after {
@@ -91,7 +91,7 @@
     padding: .05rem .5rem;
     font-size: 14px;
     color: var(--primary-col);
-    background-color: var(--gray-col);
+    background-color: var(--gray);
 }
 
 /* Three bars (hamburger menu) */
@@ -102,7 +102,7 @@
 /* Page content */
 .browser-content {
     overflow: hidden;
-    background-color: var(--dgray-col);
+    background-color: var(--dgray);
     padding: 0.5%;
     height: calc(100% - 50px);
 }

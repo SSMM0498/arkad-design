@@ -48,7 +48,7 @@ section {
     margin: var(--gasp) 0;
     padding: calc(var(--gasp)/1.25) calc(var(--gasp)*1.25);
     color: var(--primary-col);
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     box-shadow: .5px 0px 2.5px .5px #00000054;
 }
 

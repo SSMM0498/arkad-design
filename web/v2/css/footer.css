@@ -66,14 +66,14 @@ body.player > footer > .controller > .timeline {
     width: 100%;
     height: 10px;
     margin-right: 25px;
-    background-color: var(--dgray-col);
+    background-color: var(--dgray);
     cursor: pointer;
 }
 
 body.player > footer > .controller > .timeline > .progress {
     width: 52%;
     height: 10px;
-    background-color: var(--cyan-col);
+    background-color: var(--cyan);
     cursor: pointer;
 }
 

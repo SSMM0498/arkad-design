@@ -2,7 +2,7 @@
     display: block;
     margin-bottom: var(--gasp);
     width: calc(100% - 2 * var(--gasp));
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     padding: calc(var(--gasp)*1.25);
     box-shadow: var(--shadow);
 }
@@ -27,7 +27,7 @@
     width: 100%;
     height: 200px;
     cursor: pointer;
-    background-color: var(--dgray-col);
+    background-color: var(--dgray);
 }
 
 .grid > .card > .card-box::before {
@@ -52,6 +52,6 @@
 }
 
 .grid > .card > .card-box > .like-btn:hover {
-    box-shadow: 3px 3px 10px 3px var(--dgray-col);
+    box-shadow: 3px 3px 10px 3px var(--dgray);
     cursor: pointer;
 }

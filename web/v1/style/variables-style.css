@@ -13,12 +13,12 @@
     --secondary-col: #fe4284;
     --tertiary-col: #845af7;
 
-    --gray-col: #f1f1f1;
-    --dgray-col: #aaaaaa;
-    --dgray-col-t: #b3b3b3b3;
+    --gray: #f1f1f1;
+    --dgray: #aaaaaa;
+    --dgray-t: #b3b3b3b3;
 
-    --yellow-col: #ffc600;
-    --cyan-col: #00d6e7;
+    --yellow: #ffc600;
+    --cyan: #00d6e7;
     --green-col: #00e788;
     --red-col: #fe2222;
 }
@@ -48,19 +48,19 @@
 }
 
 .ycol {
-    color: var(--yellow-col) !important;
+    color: var(--yellow) !important;
 }
 
 .back-ycol {
-    background-color: var(--yellow-col) !important;
+    background-color: var(--yellow) !important;
 }
 
 .ccol {
-    color: var(--cyan-col) !important;
+    color: var(--cyan) !important;
 }
 
 .back-ccol {
-    background-color: var(--cyan-col) !important;
+    background-color: var(--cyan) !important;
 }
 
 .gcol {

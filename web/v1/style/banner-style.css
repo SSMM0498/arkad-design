@@ -5,7 +5,7 @@
     margin: var(--gasp);
     width: calc(100% - 2 * var(--gasp));
     height: 40vh;
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     box-shadow: var(--shadow);
 }
 
@@ -14,7 +14,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background: linear-gradient(85deg, var(--gray-col) 75%, var(--dgray-col-t) 95.1%), url('../img/banner.jpg');
+    background: linear-gradient(85deg, var(--gray) 75%, var(--dgray-t) 95.1%), url('../img/banner.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;

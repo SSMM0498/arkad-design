@@ -14,7 +14,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     box-shadow: var(--shadow);
 }
 
@@ -57,7 +57,7 @@ header {
     margin-right: var(--gasp);
     height: 100%;
     font-size: 1.25rem;
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     box-shadow: var(--shadow);
 }
 
@@ -76,7 +76,7 @@ header {
 .hd-middle > .search-box > input.search-inp {
     padding: .5rem .75rem;
     width: 95%;
-    background-color: var(--dgray-col);
+    background-color: var(--dgray);
 }
 
 .hd-middle > .search-box > input.search-inp:focus,
@@ -90,7 +90,7 @@ header {
     width: 1.75rem;
     height: 1.75rem;
     font-size: 1.25rem;
-    background-color: var(--yellow-col);
+    background-color: var(--yellow);
 }
 
 .hd-middle > .search-box > button.search-btn::before {
@@ -120,7 +120,7 @@ header {
 
 .hd-right > button.login-btn {
     padding: .5rem .75rem;
-    background-color: var(--cyan-col);
+    background-color: var(--cyan);
 }
 
 .hd-right > button.profile-btn {
@@ -129,7 +129,7 @@ header {
     height: 100%;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     box-shadow: var(--shadow);
 }
 
@@ -158,7 +158,7 @@ header {
     width: 50%;
     height: 100%;
     margin-right: var(--gasp);
-    background-color: var(--gray-col);
+    background-color: var(--gray);
     box-shadow: var(--shadow);
 }
 
