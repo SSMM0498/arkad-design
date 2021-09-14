@@ -1,9 +1,15 @@
 .sidebar-content.chapterlist,
+.notificationlist,
 .sidebar-content.notelist {
     display: flex;
     width: 30% !important;
     flex-direction: column;
     padding: 1rem .5rem;
+}
+
+.notificationlist {
+    padding: 1rem;
+    width: 100% !important;
 }
 
 .sidebar-content.notelist {
@@ -14,6 +20,7 @@
     width: calc(30% + var(--header-h)) !important;
 }
 
+.notificationlist h5,
 .sidebar-content.chapterlist h5,
 .sidebar-content.notelist h5,
 .sidebar-content.chapterlist p,
@@ -25,6 +32,7 @@
     margin-bottom: 0.75rem;
 }
 
+.notificationlist .notif,
 .sidebar-content.chapterlist .chapter,
 .sidebar-content.notelist .note {
     display: flex;
@@ -39,6 +47,11 @@
     font-style: 0.9rem;
 }
 
+.notificationlist .notif {
+    background-color: var(--dgray-t);
+}
+
+.notificationlist .notif .message span,
 .sidebar-content.chapterlist .chapter .name span,
 .sidebar-content.notelist .note .name span {
     color: var(--secondary-col);

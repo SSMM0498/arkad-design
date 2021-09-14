@@ -23,7 +23,7 @@ main section.grid > h2:last-child {
 }
 
 main section.grid .hero {
-    grid-column: 1/5;
+    grid-column: 1 / 5;
 }
 
 main section.grid .hero .filters {
