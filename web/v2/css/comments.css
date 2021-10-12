@@ -1,9 +1,8 @@
 .sidebar-content.discussion {
-    display: flex;
-    width: 45% !important;
+    max-width: 25%;
     flex-direction: column;
     padding: 1rem .5rem;
-    margin-right: 6px;
+    margin-right: var(--tiny-gasp);
 }
 
 div.comment-wrapper {

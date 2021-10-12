@@ -8,12 +8,19 @@
 }
 
 .notificationlist {
-    padding: 1rem;
+    padding: 1rem .5rem 1rem 1rem;
     width: 100% !important;
+    overflow: hidden;
+}
+
+.notificationlist ol.list {
+    padding-right: .5rem;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .sidebar-content.notelist {
-    margin-right: 6px;
+    margin-right: var(--tiny-gasp);
 }
 
 .sidebar-content.chapterlist {
@@ -41,7 +48,7 @@
     width: 100%;
     padding: .25rem;
     border-radius: 2.5px;
-    margin-bottom: 6px;
+    margin-bottom: var(--tiny-gasp);
     background-color: var(--dprimary-col);
     color: white;
     font-style: 0.9rem;

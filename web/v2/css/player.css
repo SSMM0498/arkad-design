@@ -28,7 +28,7 @@ section.player-wrapper .player {
     align-items: flex-start;
     width: calc(100% - 7rem);
     margin: 1.5rem 0 0;
-    padding: 6px;
+    padding: var(--tiny-gasp);
     border: 1px solid var(--primary-col);
     border-radius: 5px;
     background-color: white;
@@ -43,7 +43,7 @@ html.full section.player-wrapper .player {
     border: none;
     border-radius: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 html.full section.player-wrapper h2 {
@@ -53,13 +53,13 @@ html.full section.player-wrapper h2 {
 section.player-wrapper .player::after {
     content: '';
     position: absolute;
-    top: -6px;
-    left: -6px;
+    top: calc(-1 * var(--tiny-gasp));
+    left: calc(-1 * var(--tiny-gasp));
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% + 6px);
-    height: calc(100% + 6px);
+    width: calc(100% + var(--tiny-gasp));
+    height: calc(100% + var(--tiny-gasp));
     background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(3px);
     z-index: 98;
@@ -99,7 +99,7 @@ section.player-wrapper .player .sidebar-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 20%;
+    min-width: 15%;
     height: 100%;
     border-radius: 2.5px;
     background-color: black;
@@ -108,14 +108,14 @@ section.player-wrapper .player .sidebar-content {
 }
 
 section.player-wrapper .player:hover .sidebar-content {
-    height: calc(100% - (6px + var(--header-h) / 1.5));
+    height: calc(100% - (var(--tiny-gasp) + var(--header-h) / 1.5));
 }
 
 section.player-wrapper .player aside.sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: var(--header-h);
+    min-width: calc(var(--header-h) * .6);
     height: 100%;
     border-radius: 2.5px;
     background-color: black;
@@ -467,8 +467,10 @@ section.player-wrapper .player .cursor.tagged:nth-child(3) {
 section.player-wrapper .player .editor {
     position: relative;
     display: flex;
-    margin: 0 6px;
+    margin: 0 var(--tiny-gasp);
     width: 100%;
+    align-items: baseline;
+    justify-self: stretch;
     height: 100%;
     flex-wrap: wrap;
     border-radius: 2.5px;
@@ -485,12 +487,38 @@ section.player-wrapper .player .editor .text {
     padding: 6px 24px;
     counter-reset: line;
     width: 100%;
-    height: calc(100% - (var(--header-h) / 2 + 6px));
+    height: calc(100% - (var(--header-h) / 2 + var(--tiny-gasp)));
     background-color: #02000a;
     color: #A9B1D6;
-    overflow: hidden;
+    overflow-y: auto;
     border-radius: 2px;
     outline: none;
+}
+
+
+section.player-wrapper .player .editor .text::-webkit-scrollbar {
+    position: fixed;
+    left: 0;
+    background-color: #02000a;
+    border: none;
+    width: 7.5px;
+}
+
+section.player-wrapper .player .editor .text::-webkit-scrollbar-track {
+    background-color: #02000a;
+}
+
+section.player-wrapper .player .editor .text::-webkit-scrollbar-track:hover {
+    background-color: transparent
+}
+
+section.player-wrapper .player .editor .text::-webkit-scrollbar-thumb {
+    background-color: var(--dprimary-col);
+    opacity: .2;
+}
+
+section.player-wrapper .player .editor .text::-webkit-scrollbar-thumb:hover {
+    opacity: .9;
 }
 
 section.player-wrapper .player .editor .metas,
@@ -499,7 +527,7 @@ section.player-wrapper .player .editor .tabs {
     align-items: center;
     width: 70%;
     height: calc(var(--header-h) / 2);
-    margin-bottom: 6px;
+    margin-bottom: var(--tiny-gasp);
     padding: 0 6px;
     border-radius: 2px;
     background-color: black;
@@ -508,8 +536,8 @@ section.player-wrapper .player .editor .tabs {
 section.player-wrapper .player .editor .metas {
     position: absolute;
     right: 0;
-    width: calc(30% - 6px);
-    margin-left: 6px;
+    width: calc(30% - var(--tiny-gasp));
+    margin-left: var(--tiny-gasp);
     transition: all .5s ease-in-out;
 }
 
@@ -545,9 +573,13 @@ section.player-wrapper .player .editor .metas .avatar {
     height: 24px;
     object-fit: cover;
     border-radius: 24px;
-    margin-left: -15px;
+    margin-left: -10px;
     transition: all .6s ease-in-out;
     cursor: pointer;
+}
+
+section.player-wrapper .player .editor .metas .avatar:first-child {
+    margin-left: 0;
 }
 
 section.player-wrapper .player .editor .line {
@@ -562,6 +594,10 @@ section.player-wrapper .player .editor .line {
 
 section.player-wrapper .player .editor .line.tag {
     color: #8b2062;
+}
+
+section.player-wrapper .player .editor .line span {
+    color: #208b32;
 }
 
 section.player-wrapper .player .editor .line.active {

@@ -25,6 +25,36 @@
             <button class="btn">Create</button>
         </div>
     </header>
+    <style>
+        aside {
+            position: fixed;
+            top: 30%;
+            right: 0;
+            z-index: 3;
+        }
+
+        ul {
+            background-color: #fff;
+            list-style: none;
+            padding: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+        }
+
+        ul li a {
+            font-size: 1.25rem;
+            color: black;
+        }
+    </style>
+    <aside>
+        <ul>
+            <li><a href="#">Metas infos</a></li>
+            <li><a href="#">Slides</a></li>
+            <li><a href="#">Workspaces</a></li>
+        </ul>
+    </aside>
     <main class="creation wide">
         <style>
             body::before {
@@ -67,7 +97,7 @@
         <h2>Meta infos</h2>
         <h3 contenteditable="true">
             <span class="field">Title</span>
-            Comparaison entre Typescript & Javascript
+            Comparison between Typescript & Javascript
         </h3>
         <section class="infos">
             <span class="field">Playlist</span>

@@ -35,11 +35,11 @@
 section.player-wrapper .player .player-controller {
     position: absolute;
     bottom: calc(-1 * var(--header-h));
-    left: 6px;
+    left: var(--tiny-gasp);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 12px);
+    width: calc(100% - 2 * var(--tiny-gasp));
     height: calc(var(--header-h) / 1.5);
     border-radius: 2.5px;
     background-color: rgb(0, 0, 0);
@@ -48,15 +48,15 @@ section.player-wrapper .player .player-controller {
 }
 
 section.player-wrapper .player:hover .player-controller {
-    bottom: 6px;
+    bottom: var(--tiny-gasp);
 }
 
 section.player-wrapper .player:hover .sidebar {
-    height: calc(100% - (6px + var(--header-h) / 1.5));
+    height: calc(100% - (var(--tiny-gasp) + var(--header-h) / 1.5));
 }
 
 section.player-wrapper .player:hover .editor {
-    height: calc(100% - (6px + var(--header-h) / 1.5));
+    height: calc(100% - (var(--tiny-gasp) + var(--header-h) / 1.5));
 }
 
 section.player-wrapper .player .player-controller span.sound,

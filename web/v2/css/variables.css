@@ -2,6 +2,7 @@
 /* Layout */
 :root {
     --header-h: 60px;
+    --tiny-gasp: 2px;
     --gasp: 25px;
     --radius: 2.5px;
     --shadow: .5px 1px 30px 5px #0000003f, -1px -1px 30px 5px #0000003f;

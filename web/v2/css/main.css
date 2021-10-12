@@ -10,9 +10,11 @@
 @import "./grid.css";
 @import "./player.css";
 @import "./filetree.css";
+@import "./packages.css";
 @import "./infos.css";
 @import "./workspace.css";
 @import "./channel.css";
+@import "./icon.css";
 @import "./chart.css";
 @import "./comments.css";
 @import "./notelist.css";
