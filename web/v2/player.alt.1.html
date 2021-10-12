@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="alt">
+    <header>
+        <div class="logo">arkad</div>
+        <nav class="menu">
+            <span>Explore</span>
+            <span>Trending</span>
+            <span class="search">
+                <input type="search" placeholder="Search">
+            </span>
+        </nav>
+        <div class="profile">
+            <button class="btn second">Log in</button>
+            <button class="btn">Try for free</button>
+        </div>
+    </header>
+    <main class="wide">
+        <style>
+            body::before {
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::before {
+                left: 2.5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            html::after {
+                left: 5%;
+                width: 2.5%;
+                opacity: .75;
+            }
+
+            body::after {
+                top: -25vh;
+                right: -25vh;
+                width: 50vh;
+                height: 50vh;
+                opacity: .35;
+                background-color: var(--secondary-col);
+            }
+
+            main::after {
+                top: auto;
+                bottom: -10vh;
+                right: 20%;
+                width: 20vh;
+                height: 20vh;
+                opacity: .125;
+                background-color: var(--cyan);
+            }
+        </style>
+        <section class="player-wrapper">
+            <h2>Redimensionnement en drag'n drop</h2>
+            <div class="player">
+                <aside class="sidebar editorbar">
+                    <span class="dots">
+                        <span></span><span></span><span></span>
+                    </span>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="bottom"></span>
+                    </nav>
+                </aside>
+                <div class="dependencies sidebar-content">
+                    <h5>My Packages</h5>
+                    <div class="tools">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="package">NodeJS</div>
+                    <div class="package">MathJS</div>
+                    <div class="package">Geo3DJS</div>
+                </div>
+                <div class="editor">
+                    <div class="tabs">
+                        <div class="tab active">index.vue</div>
+                        <div class="tab">style.css</div>
+                        <div class="tab">main.js</div>
+                    </div>
+                    <div class="metas">
+                        <img src="../img/avatar.jpg" alt="" class="avatar">
+                    </div>
+                    <div class="text" contenteditable="true">
+                        <p class="line tag">&lt;template &gt;</p>
+                        <p class="line indent-1">&lt;span v-if="date" &gt;</p>
+                        <p class="line indent-2">{{ date.getMonth() }}</p>
+                        <p class="line indent-1">&lt;/span &gt;</p>
+                        <p class="line tag active">&lt;/template &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;script &gt;</p>
+                        <p class="line indent-1">export default {</p>
+                        <p class="line indent-2">name: "Month" </p>
+                        <p class="line indent-2">props: {</p>
+                        <p class="line indent-2">date: { type: Date } </p>
+                        <p class="line indent-2">}</p>
+                        <p class="line indent-1">}</p>
+                        <p class="line tag">&lt;/script &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;style lang="scss" scoped &gt;</p>
+                        <p class="line"></p>
+                        <p class="line tag">&lt;/style &gt;</p>
+                    </div>
+                </div>
+                <aside class="sidebar communitybar">
+                    <span class="dots">
+                        <span></span><span></span><span></span>
+                    </span>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                </aside>
+                <div class="player-controller">
+                    <span class="play"></span>
+                    <span class="sound"></span>
+                    <div class="progress-wrapper">
+                        <div class="progress-line">
+                            <div class="part" style="width:10%">
+                                <span class="progress-level"></span>
+                            </div>
+                            <div class="part" style="width:30%">
+                                <span class="progress-level"></span>
+                            </div>
+                            <div class="part" style="width:55%">
+                                <span class="progress-level"></span>
+                            </div>
+                            <div class="part" style="width:5%">
+                                <span class="progress-level"></span>
+                            </div>
+                            <span class="progress-thumb"></span>
+                        </div>
+                    </div>
+                    <span class="time">03 : 56</span>
+                    <span class="exit"></span>
+                    <span class="more"></span>
+                </div>
+                <div class="cursors">
+                    <div class="cursor"></div>
+                </div>
+            </div>
+        </section>
+        <section class="infos">
+            <div class="kast-infos">
+                <div class="date">24 Aug 2021</div>
+                <span class="dot seperator"></span>
+                <div class="views">1,5K views</div>
+                <span class="dot seperator"></span>
+                <div class="like">750 likes</div>
+            </div>
+            <div class="slide">
+                <span class="tag orange">HTML</span>
+                <span class="tag lblue">CSS</span>
+                <span class="tag yellow">Javascript</span>
+                <span class="tag">UI</span>
+            </div>
+            <div class="author-infos">
+                <img src="../img/portrait.jpg" alt="" class="avatar">
+                <a href="#" class="name">Grafikart</a>
+                <div class="btn small">Subscribe</div>
+            </div>
+        </section>
+        <section class="description">
+            <p>
+                Eaque nesciunt tempore cumque aut eum est ullam id earum. Culpa eligendi voluptatem voluptatibus. Dolore
+                fugit possimus modi rerum minus odit commodi omnis omnis. Nulla sit et temporibus laborum iste
+                enim.<br><br>
+                Corporis neque magnam quo reprehenderit at adipisci. Odit excepturi quo dolore id sit recusandae nihil
+                asperiores. Asperiores et sunt est nihil et voluptatum est aut dolor. Accusantium saepe explicabo
+                inventore. Distinctio sed dolore rerum. Maiores ut rem explicabo dolore iusto totam quos qui ut.<br><br>
+                Quod nihil quia et voluptatem. Qui ex voluptate. Laudantium ex saepe saepe voluptas. Officia est
+                necessitatibus asperiores qui voluptatem sit. Excepturi in nisi officia quod. Quis eum odit occaecati
+                quia aut.
+            </p>
+        </section>
+        <span class="divider"></span>
+        <section class="grid">
+            <div class="card">
+                <header>
+                    <h3>Redimensionnement en drag'n drop</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Provident dolorum autem doloremque sed iure consequatur exercitationem. Fugiat in sed at
+                        molestiae omnis atque ad ea.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">58 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Sapiente consectetur et culpa.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Nisi ut tempora. Quaerat perferendis delectus labore recusandae. Quibusdam mollitia incidunt
+                        doloribus vel earum qui non.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">62 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Ut inventore corrupti deleniti aut facilis</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Quaerat modi sunt iste. Ullam sed expedita omnis et quae consequatur. Quia incidunt iusto qui
+                        aut atque excepturi. Est nemo eum sint.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">64 min</div>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Voluptatem reiciendis nihil aut exercitationem.</h3>
+                </header>
+                <div class="body">
+                    <div class="icon"></div>
+                    <p class="description">
+                        Sequi eum natus corporis sint dolor vel officiis architecto sint. Eos officiis itaque aut at.
+                        Sint vero optio. Ut sint occaecati.
+                    </p>
+                </div>
+                <footer>
+                    <div class="progress">
+                        <span style="width:0%"></span>
+                    </div>
+                    <div class="time">50 min</div>
+                </footer>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div>
+                <h3>Arkad</h3>
+                <h3>Social</h3>
+                <h3>Activity</h3>
+            </div>
+            <div>
+                <nav class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Shop</a>
+                </nav>
+                <nav class="footer-links">
+                    <a href="#">Youtube</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Reddit</a>
+                    <a href="#">Instagram</a>
+                </nav>
+                <nav class="footer-links">
+                    <a href="#">Tags</a>
+                    <a href="#">Challenges</a>
+                    <a href="#">Code of conduct</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-right">
+            <img class="logo" src="../web/img/logo.0.png" alt="">
+            <p>Copyright ©️ 2021 <br /> made with ❤️ by ssmm0498</p>
+        </div>
+    </footer>
+</body>
+
+</html>
