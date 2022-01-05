@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     max-width: 100vw !important;
     min-height: 100vh;
-    color: var(--primary-col);
+    color: var(--primary);
 }
 
 /* body.recorder, */
@@ -47,7 +47,7 @@ section {
     font-size: var(--medium-font-sz);
     margin: var(--gasp) 0;
     padding: calc(var(--gasp)/1.25) calc(var(--gasp)*1.25);
-    color: var(--primary-col);
+    color: var(--primary);
     background-color: var(--gray);
     box-shadow: .5px 0px 2.5px .5px #00000054;
 }
@@ -55,7 +55,7 @@ section {
 .search-title > span {
     margin-left: var(--sz-1);
     font-weight: bold;
-    color: var(--secondary-col);
+    color: var(--secondary);
 }
 
 /* footer {

@@ -4,7 +4,8 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    color: black;
+    color: var(--font);
+    overflow-x: hidden;
     font-family: var(--body-font);
     background-color: white;
 }
@@ -15,11 +16,11 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 10%;
+    width: .75%;
     height: 100vh;
-    opacity: .35;
-    background-color: var(--primary-col);
-    z-index: -1;
+    opacity: .5;
+    background-color: var(--primary);
+    z-index: -2;
 }
 
 html::before {
@@ -27,12 +28,12 @@ html::before {
     display: block;
     position: fixed;
     top: 0;
-    left: 10%;
-    width: 10%;
+    left: .75%;
+    width: .75%;
     height: 100vh;
-    opacity: .35;
-    background-color: var(--tertiary-col);
-    z-index: -1;
+    opacity: .5;
+    background-color: var(--tertiary);
+    z-index: -2;
 }
 
 html::after {
@@ -40,26 +41,27 @@ html::after {
     display: block;
     position: fixed;
     top: 0;
-    left: 20%;
-    width: 10%;
+    left: 1.5%;
+    width: .75%;
     height: 100vh;
-    opacity: .35;
-    background-color: var(--secondary-col);
-    z-index: -1;
+    opacity: .8;
+    background-color: var(--secondary);
+    z-index: -2;
 }
 
 body::after {
     content: "";
     display: block;
     position: fixed;
-    top: 12.5vh;
+    top: 25vh;
     right: 5%;
     width: 75vh;
     height: 75vh;
     border-radius: 50vh;
-    opacity: .35;
-    background-color: var(--secondary-col);
-    z-index: -1;
+    opacity: .5;
+    /* background-color: var(--secondary); */
+    background-color: black;
+    z-index: -2;
 }
 
 main::after {
@@ -72,8 +74,9 @@ main::after {
     height: 40vh;
     border-radius: 50vh;
     opacity: .125;
-    background-color: var(--cyan);
-    z-index: -1;
+    /* background-color: var(--cyan); */
+    background-color: black;
+    z-index: -2;
 }
 
 main {
@@ -99,12 +102,16 @@ html.full main {
 }
 
 main section {
-    width: calc(100% - 7rem);
+    width: calc(100% - 5rem);
     height: 100vh;
 }
 
+main section h2 {
+    font-family: var(--body-font-hero);
+}
+
 main.wide section {
-    width: calc(100% - 4rem);
+    width: calc(100% - 2rem);
 }
 
 main section {
@@ -113,34 +120,37 @@ main section {
     justify-content: center;
 }
 
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+    font-weight: 500;
+}
+
 main h1 {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 60px;
 }
 
 main h2 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 50px;
 }
 
 main h3 {
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 45px;
 }
 
 main h4 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 40px;
 }
 
 main h5 {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 35px;
 }
 
 main h6 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 30px;
 }
 
 .btn {
@@ -178,6 +188,6 @@ main h6 {
 .divider {
     display: block;
     width: calc(100% - 15rem);
-    height: 2px;
-    background-color: var(--primary-col);
+    height: 1px;
+    background-color: var(--primary);
 }

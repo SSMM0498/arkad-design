@@ -73,7 +73,7 @@
 
 .side-bar > .file-tree div.active {
     color: white;
-    background-color: var(--secondary-col);
+    background-color: var(--secondary);
 }
 
 .side-bar > .slide-toggler {
@@ -157,8 +157,8 @@
     font-size: 1.1rem;
     cursor: pointer;
     background-color: transparent;
-    border-bottom: .5px solid var(--secondary-col);
-    color: var(--secondary-col);
+    border-bottom: .5px solid var(--secondary);
+    color: var(--secondary);
 }
 
 /* .side-bar > .file-tree div.folder::before {

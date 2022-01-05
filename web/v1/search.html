@@ -278,6 +278,14 @@
             <p>Copyright - 2020 | made with ❤️ by ssmm0498</p>
         </div>
     </footer>
+    <script defer>
+        const search = document.querySelector("span.search");
+        const nav = document.querySelector("header nav.menu");
+
+        search.addEventListener(('click'), () => {
+            nav.classList.toggle("active-search");
+        });
+    </script>
     <script src="script/main.js"></script>
 </body>
 

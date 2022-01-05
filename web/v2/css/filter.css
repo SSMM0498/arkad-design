@@ -1,0 +1,38 @@
+.filters .tag {
+    position: relative;
+    cursor: pointer;
+}
+
+.filters .tag .label {
+    font-weight: bold;
+}
+
+.filters .tag ul {
+    position: absolute;
+    height: 0;
+    right: 0;
+    text-align: right;
+    z-index: 3;
+    max-height: 200px;
+    padding-right: .5rem;
+    overflow-y: scroll;
+    list-style-type: none;
+    transition: height .25s ease-in-out;
+}
+
+.filters .tag ul.active {
+    padding-top: .5rem;
+    height: 200px;
+}
+
+.filters .tag ul li {
+    display: inline-flex;
+}
+
+.filters .tag ul::-webkit-scrollbar {
+    display: none;
+}
+
+.filters .tag ul::-webkit-scrollbar-track {
+    display: none;
+}

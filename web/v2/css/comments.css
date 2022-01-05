@@ -90,8 +90,8 @@ div.comment-wrapper .comment .content {
 
 div.comment-wrapper .comment .content > a.kast-link {
     text-decoration: none;
-    color: var(--dprimary-col);
-    border-bottom: 1px solid var(--primary-col);
+    color: var(--dprimary);
+    border-bottom: 1px solid var(--primary);
 }
 
 div.comment-wrapper .comment .content > a.kast-link::after {

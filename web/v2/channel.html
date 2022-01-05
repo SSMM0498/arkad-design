@@ -12,10 +12,12 @@
 
 <body class="alt">
     <header>
-        <div class="logo">arkad</div>
+        <a href="./index.html" class="logo">
+            <img src="../img//logo.0.png" alt="arka-logo">
+        </a>
         <nav class="menu">
-            <span>Explore</span>
-            <span>Trending</span>
+            <a href="./catalog.html">Explore</a>
+            <a href="./trending.html">Trending</a>
             <span class="search">
                 <input type="search" placeholder="Search">
             </span>
@@ -27,43 +29,6 @@
     </header>
     <main class="channel wide">
         <style>
-            body::before {
-                width: 2.5%;
-                opacity: .75;
-            }
-
-            html::before {
-                left: 2.5%;
-                width: 2.5%;
-                opacity: .75;
-            }
-
-            html::after {
-                left: 5%;
-                width: 2.5%;
-                opacity: .75;
-            }
-
-            body::after {
-                top: -25vh;
-                right: -25vh;
-                width: 50vh;
-                height: 50vh;
-                opacity: .35;
-                background-color: var(--secondary-col);
-            }
-
-            main::after {
-                top: auto;
-                bottom: -10vh;
-                right: 20%;
-                width: 20vh;
-                height: 20vh;
-                opacity: .125;
-                background-color: var(--cyan);
-            }
-
-
             section.player-wrapper .player.live:hover .sidebar-content {
                 height: 100% !important;
             }
@@ -133,14 +98,61 @@
         </section>
         <section class="grid">
             <div class="hero">
+                <p class="presentation">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, maiores vel! Quod accusamus blanditiis tenetur quia similique minima cum sunt aliquid. Cupiditate excepturi recusandae omnis?
+                </p>
                 <div class="filters">
-                    <span class="tag">Trier | Date de sortie</span>
-                    <span class="tag">Niveau | Débutant</span>
-                    <span class="tag">Technos | Toutes</span>
-                    <span class="tag">Type | Playlist</span>
+                    <div class="tag">
+                        <span class="label">| Sort :</span>
+                        <span class="active">Recent</span>
+                        <ul>
+                            <li>Older</li>
+                            <li>Most view</li>
+                            <li>Less view</li>
+                        </ul>
+                    </div>
+                    <div class="tag">
+                        <span class="label">| Level :</span>
+                        <span class="active">Beginner</span>
+                        <ul>
+                            <li>Intermédaire.</li>
+                            <li>Advanced</li>
+                            <li>expert</li>
+                        </ul>
+                    </div>
+                    <div class="tag">
+                        <span class="label">| Technos :</span>
+                        <span class="active">All</span>
+                        <ul class="technos">
+                            <li class="tag orange">HTML</li>
+                            <li class="tag lblue">CSS</li>
+                            <li class="tag yellow">Javascript</li>
+                            <li class="tag">UI</li>
+                            <li class="tag blue">Typescript</li>
+                            <li class="tag lblue-alt">ReactJS</li>
+                            <li class="tag green">VueJS</li>
+                            <li class="tag orange">SvelteJS</li>
+                            <li class="tag lgreen">NodeJS</li>
+                            <li class="tag">Database</li>
+                            <li class="tag dblue">Python</li>
+                            <li class="tag">MySQL</li>
+                            <li class="tag dgreen">MongoDB</li>
+                            <li class="tag pink">graphQL</li>
+                        </ul>
+                    </div>
+                    <div class="tag">
+                        <span class="label">| Type :</span>
+                        <span class="active">Arklist</span>
+                        <ul>
+                            <li>Arkast</li>
+                            <li>Cursus</li>
+                            <li>Live</li>
+                            <li>Premium <span>⭐</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="card stacked">
+            <div class="card live run">
                 <header>
                     <h3>Redimensionnement en drag'n drop</h3>
                 </header>
@@ -158,7 +170,7 @@
                     <div class="time">58 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card list">
                 <header>
                     <h3>Sapiente consectetur et culpa.</h3>
                 </header>
@@ -176,7 +188,7 @@
                     <div class="time">62 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Ut inventore corrupti deleniti aut facilis</h3>
                 </header>
@@ -194,7 +206,7 @@
                     <div class="time">64 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Voluptatem reiciendis nihil aut exercitationem.</h3>
                 </header>
@@ -212,7 +224,7 @@
                     <div class="time">50 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Earum voluptatem iure hic est.</h3>
                 </header>
@@ -230,7 +242,7 @@
                     <div class="time">68 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Officia beatae repudiandae reiciendis provident voluptatem.</h3>
                 </header>
@@ -248,7 +260,7 @@
                     <div class="time">27 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Deleniti magni repudiandae voluptatem sunt laborum alias.</h3>
                 </header>
@@ -266,7 +278,7 @@
                     <div class="time">25 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Ea molestiae molestiae similique voluptas.</h3>
                 </header>
@@ -284,7 +296,7 @@
                     <div class="time">62 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Doloribus qui sed repellendus blanditiis praesentium quia eum quos.</h3>
                 </header>
@@ -302,7 +314,7 @@
                     <div class="time">44 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Dignissimos aut rem labore.</h3>
                 </header>
@@ -353,6 +365,15 @@
             <p>Copyright ©️ 2021 <br /> made with ❤️ by ssmm0498</p>
         </div>
     </footer>
+    <script defer>
+        const search = document.querySelector("span.search");
+        const nav = document.querySelector("header nav.menu");
+
+        search.addEventListener(('click'), () => {
+            nav.classList.toggle("active-search");
+        });
+    </script>
+    <script src="./js/filter.js"></script>
 </body>
 
 </html>

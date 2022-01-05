@@ -177,14 +177,14 @@ section.player-wrapper .player .player-controller .progress-thumb {
     height: 20px;
     cursor: pointer;
     border: 2px solid black;
-    background-color: var(--primary-col);
+    background-color: var(--secondary);
 }
 
 section.player-wrapper .player .player-controller .progress-line .part .progress-level {
     display: block;
     width: 0%;
     height: 100%;
-    background-color: var(--primary-col);
+    background-color: var(--secondary);
 }
 
 section.player-wrapper .player .player-controller.editing .progress-line .part::after {
@@ -199,7 +199,7 @@ section.player-wrapper .player .player-controller.editing .progress-line .part::
     cursor: pointer;
     border-top: 3px solid red;
     border-bottom: 3px solid red;
-    background-color: var(--secondary-col);
+    background-color: var(--secondary);
 }
 
 section.player-wrapper .player .player-controller .progress-line .part:nth-child(1) .progress-level,

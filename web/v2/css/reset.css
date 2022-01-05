@@ -11,12 +11,12 @@
 ::-moz-selection {
     /* Code for Firefox */
     color: white;
-    background: var(--tertiary-col);
+    background: var(--tertiary);
 }
 
 ::selection {
     color: white;
-    background: var(--tertiary-col);
+    background: var(--tertiary);
 }
 
 *::-webkit-scrollbar {
@@ -36,9 +36,14 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--primary-col);
+    background-color: var(--primary);
 }
 
 *::-webkit-scrollbar-thumb:hover {
     opacity: .9;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }

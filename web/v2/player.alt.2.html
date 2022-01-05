@@ -12,10 +12,12 @@
 
 <body class="alt">
     <header>
-        <div class="logo">arkad</div>
+        <a href="./index.html" class="logo">
+            <img src="../img//logo.0.png" alt="arka-logo">
+        </a>
         <nav class="menu">
-            <span>Explore</span>
-            <span>Trending</span>
+            <a href="./catalog.html">Explore</a>
+            <a href="./trending.html">Trending</a>
             <span class="search">
                 <input type="search" placeholder="Search">
             </span>
@@ -27,22 +29,6 @@
     </header>
     <main class="wide">
         <style>
-            body::before {
-                width: 2.5%;
-                opacity: .75;
-            }
-
-            html::before {
-                left: 2.5%;
-                width: 2.5%;
-                opacity: .75;
-            }
-
-            html::after {
-                left: 5%;
-                width: 2.5%;
-                opacity: .75;
-            }
 
             body::after {
                 top: -25vh;
@@ -50,7 +36,7 @@
                 width: 50vh;
                 height: 50vh;
                 opacity: .35;
-                background-color: var(--secondary-col);
+                background-color: var(--secondary);
             }
 
             main::after {
@@ -94,7 +80,7 @@
                         <p class="line tag">section.player-wrapper .player .editor .tab.active {</p>
                             <p class="line indent-1"><span>color</span>: white;</p>
                             <p class="line indent-1"><span>font-weight</span>: 500;</p>
-                            <p class="line indent-1"><span>border-bottom</span>: 2px solid var(--tertiary-col);</p>
+                            <p class="line indent-1"><span>border-bottom</span>: 2px solid var(--tertiary);</p>
                             <p class="line indent-1"><span>box-shadow</span>: rgba(0, 0, 0, 0.125) 0px 5px 15px;</p>
                             <p class="line tag">}</p>
                             <p class="line"></p>
@@ -323,6 +309,14 @@
             <p>Copyright ©️ 2021 <br /> made with ❤️ by ssmm0498</p>
         </div>
     </footer>
+    <script defer>
+        const search = document.querySelector("span.search");
+        const nav = document.querySelector("header nav.menu");
+
+        search.addEventListener(('click'), () => {
+            nav.classList.toggle("active-search");
+        });
+    </script>
 </body>
 
 </html>

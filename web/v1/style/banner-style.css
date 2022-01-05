@@ -52,7 +52,7 @@
 .banner>.banner-main>div>.banner-btn {
     padding: 1rem 1.25rem;
     font-size: 1.25rem;
-    background-color: var(--tertiary-col);
+    background-color: var(--tertiary);
 }
 
 .banner>.banner-main>h1>span:before {
@@ -63,7 +63,7 @@
     content: '<';
     background: none !important;
     margin-right: .5rem;
-    -webkit-text-fill-color: var(--primary-col) !important;
+    -webkit-text-fill-color: var(--primary) !important;
 }
 
 .banner>.banner-main>h1>span:after {
@@ -74,5 +74,5 @@
     content: '/>';
     background: none !important;
     margin-left: .5rem;
-    -webkit-text-fill-color: var(--primary-col) !important;
+    -webkit-text-fill-color: var(--primary) !important;
 }

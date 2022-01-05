@@ -8,7 +8,8 @@ section.player-wrapper {
     padding-bottom: 2.5rem;
     height: 100vh;
     overflow: hidden;
-    border-bottom: 1px solid var(--dprimary-col);
+    border-bottom: 1px solid var(--dprimary);
+    backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -29,7 +30,7 @@ section.player-wrapper .player {
     width: calc(100% - 7rem);
     margin: 1.5rem 0 0;
     padding: var(--tiny-gasp);
-    border: 1px solid var(--primary-col);
+    border: 1px solid var(--primary);
     border-radius: 5px;
     background-color: white;
     height: calc(95vh - var(--header-h));
@@ -204,7 +205,7 @@ section.player-wrapper .player .miniconsole {
     bottom: 15%;
     left: 20%;
     height: 25%;
-    border: 1px solid var(--primary-col);
+    border: 1px solid var(--primary);
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(2px);
 }
@@ -423,7 +424,7 @@ section.player-wrapper .player .editor .text::-webkit-scrollbar-track:hover {
 }
 
 section.player-wrapper .player .editor .text::-webkit-scrollbar-thumb {
-    background-color: var(--dprimary-col);
+    background-color: var(--dprimary);
     opacity: .2;
 }
 
@@ -474,7 +475,7 @@ section.player-wrapper .player .editor .tab::after {
 section.player-wrapper .player .editor .tab.active {
     color: white;
     font-weight: 500;
-    border-bottom: 2px solid var(--tertiary-col);
+    border-bottom: 2px solid var(--tertiary);
     box-shadow: rgba(0, 0, 0, 0.125) 0px 5px 15px;
 }
 

@@ -344,6 +344,14 @@
             </div>
         </div>
     </footer>
+    <script defer>
+        const search = document.querySelector("span.search");
+        const nav = document.querySelector("header nav.menu");
+
+        search.addEventListener(('click'), () => {
+            nav.classList.toggle("active-search");
+        });
+    </script>
 </body>
 
 </html>

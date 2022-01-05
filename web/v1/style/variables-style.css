@@ -9,9 +9,9 @@
 
 /* Colors */
 :root {
-    --primary-col: #212935;
-    --secondary-col: #fe4284;
-    --tertiary-col: #845af7;
+    --primary: #212935;
+    --secondary: #fe4284;
+    --tertiary: #845af7;
 
     --gray: #f1f1f1;
     --dgray: #aaaaaa;
@@ -24,27 +24,27 @@
 }
 
 .pcol {
-    color: var(--primary-col) !important;
+    color: var(--primary) !important;
 }
 
 .back-pcol {
-    background-color: var(--primary-col) !important;
+    background-color: var(--primary) !important;
 }
 
 .scol {
-    color: var(--secondary-col) !important;
+    color: var(--secondary) !important;
 }
 
 .back-scol {
-    background-color: var(--secondary-col) !important;
+    background-color: var(--secondary) !important;
 }
 
 .tcol {
-    color: var(--tertiary-col) !important;
+    color: var(--tertiary) !important;
 }
 
 .back-tcol {
-    background-color: var(--tertiary-col) !important;
+    background-color: var(--tertiary) !important;
 }
 
 .ycol {

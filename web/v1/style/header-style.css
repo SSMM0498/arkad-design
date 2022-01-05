@@ -69,7 +69,7 @@ header {
     height: 100%;
     font-size: 1.25rem;
     color: white;
-    background-color: var(--tertiary-col);
+    background-color: var(--tertiary);
     box-shadow: var(--shadow);
 }
 
@@ -100,8 +100,8 @@ header {
     content: '';
     width: .75rem;
     height: .75rem;
-    border-top: .25rem solid var(--primary-col);
-    border-right: .25rem solid var(--primary-col);
+    border-top: .25rem solid var(--primary);
+    border-right: .25rem solid var(--primary);
     transform: rotate(45deg);
 }
 

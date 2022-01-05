@@ -13,13 +13,14 @@ section.workspace > h5 {
 }
 
 main.creation > h1 {
-    color: var(--dprimary-col);
+    color: var(--dprimary);
     margin-bottom: 1rem;
     align-self: start;
     padding: 2.5rem 2rem;
     width: 100%;
-    border-bottom: 1px solid var(--tertiary-col);
+    border-bottom: 1px solid var(--tertiary);
     background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 main.creation > h1::first-letter {

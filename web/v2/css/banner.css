@@ -10,22 +10,66 @@ main .right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 45%;
+    width: 50%;
     height: 100%;
 }
 
 main .banner .right {
+    position: absolute;
+    right: 0;
     padding-left: 0;
-    width: 55%;
+    width: 50%;
+    height: 90%;
     position: relative;
 }
 
-main .banner  h1 {
-    font-weight: 600;
-    font-size: 4.5rem;
-    line-height: 5rem;
+main .banner h1 {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 4.5rem;
     margin-bottom: 2rem;
-    font-family: var(--body-font-alt);
+    font-family: var(--body-font-hero);
+}
+
+.float {
+    position: relative;
+    transform: translateY(0);
+    animation: float 3.5s ease-in-out infinite;
+}
+
+.float::after {
+    position: absolute;
+    content: '.';
+    left: 52.5%;
+    top: -40%;
+    text-shadow: 0 0 0.15em var(--luminescence);
+    animation: rainbow 5s ease-in-out infinite, float 5s ease-in-out infinite;
+}
+
+main .banner h1 span.text-code {
+    display: inline-flex;
+    align-items: center;
+    color: var(--dsecondary);
+}
+
+main .banner h1 span.text-code::before,
+main .banner h1 span.text-code::after {
+    display: block;
+    color: var(--dsecondary);
+}
+
+main .banner h1 span.text-code::after {
+    content: "}";
+    display: block;
+    color: var(--dsecondary);
+}
+
+main .banner h1 span.text-code::before {
+    content: "{";
+    display: block;
+    color: var(--dsecondary);
 }
 
 main .banner  p.content {
@@ -40,14 +84,16 @@ main .banner .btn-actions {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
+    width: 85%;
 }
 
+main .banner .btn.info,
 main .banner .btn.play {
     display: flex;
     align-items: center;
 }
 
+main .banner .btn.info::before,
 main .banner .btn.play::before {
     content: "";
     display: flex;
@@ -58,14 +104,24 @@ main .banner .btn.play::before {
     margin-right: .5rem;
     border-radius: 32px;
     border: 2px solid black;
+}
+
+main .banner .btn.play::before {
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M16.394 12L10 7.737v8.526L16.394 12zm2.982.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z' fill='rgba(0,0,0,1)'/%3E%3C/svg%3E");
 }
 
+main .banner .btn.info::before {
+    content: "i";
+    font-family: serif;
+    font: 1.75rem;
+    font-weight: 900;
+}
+
 main .banner .sidebar {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: .5%;
     display: flex;
     flex-direction: column;
@@ -73,7 +129,7 @@ main .banner .sidebar {
     width: 3.5vw;
     height: 82.5%;
     border-radius: 2.5px;
-    background-color: black;
+    background-color: var(--primary);
 }
 
 .hist,
@@ -143,7 +199,26 @@ main .banner .editor {
     height: 80%;
     padding: 2rem;
     border-radius: 2.5px;
-    background-color: var(--primary-col);
+    color: white;
+    background-color: transparent;
+}
+
+main .banner .editor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 2.5px;
+    backdrop-filter: blur(5px);
+    background-color: var(--lprimary-t);
+}
+
+main .banner .editor .text {
+    z-index: 1;
 }
 
 main .banner .editor .text span {
@@ -177,13 +252,14 @@ main .banner .editor .tab {
     border-radius: 2.5px;
     width: 27.5%;
     padding: .75rem 0;
-    background-color: var(--secondary-col);
+    /* background-color: var(--secondary); */
+    background-color: black;
 }
 
 main .banner .editor .tab.active {
     color: white;
     font-weight: 600;
-    background-color: var(--tertiary-col);
+    background-color: var(--tertiary);
     box-shadow: rgba(0, 0, 0, 0.125) 0px 5px 15px;
 }
 
@@ -220,7 +296,7 @@ main .banner .player-controller {
     width: 60%;
     height: 3.5vw;
     border-radius: 2.5px;
-    background-color: black;
+    background-color: var(--primary);
     z-index: 2;
 }
 
@@ -262,7 +338,7 @@ main .banner .player-controller input[type=range]::-webkit-slider-runnable-track
 main .banner .player-controller input[type=range]::-webkit-slider-thumb {
     height: 20px;
     width: 10px;
-    background: var(--primary-col);
+    background: var(--primary);
     border: 2px solid black;
     cursor: pointer;
     -webkit-appearance: none;
@@ -278,8 +354,8 @@ main .banner .player-controller .time {
     margin-right: .5rem;
 }
 
-main .banner .console,
-main .banner .browser {
+main .banner .miniconsole,
+main .banner .minibrowser {
     position: absolute;
     display: flex;
     align-self: start;
@@ -290,23 +366,25 @@ main .banner .browser {
     box-shadow: rgba(0, 0, 0, 0.125) 0px 5px 15px;
 }
 
-main .banner .browser {
+main .banner .minibrowser {
     top: 30%;
     right: 0;
     height: 30%;
-    background-color: white;
+    z-index: 1;
+    background-color: rgb(235, 235, 235);
 }
 
-main .banner .console {
+main .banner .miniconsole {
     bottom: 22.5%;
     left: 20%;
-    height: 15%;
+    height: 20%;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(2px);
 }
 
-main .banner .console nav,
-main .banner .browser nav {
+main .banner .miniconsole nav,
+main .banner .minibrowser nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -315,26 +393,26 @@ main .banner .browser nav {
     border-radius: 2.5px 2.5px 0 0;
 }
 
-main .banner .browser nav {
+main .banner .minibrowser nav {
     background-color: rgb(0, 0, 0);
 }
 
-main .banner .console nav p {
+main .banner .miniconsole nav p {
     width: 80%;
     color: white;
     padding: .5rem 0;
 }
 
-main .banner .console p.input {
+main .banner .miniconsole p.input {
     color: white;
     margin-left: 1rem;
 }
 
-main .banner .console p.input span {
+main .banner .miniconsole p.input span {
     color: #f3cb50;
 }
 
-main .banner .console p.input::after {
+main .banner .miniconsole p.input::after {
     content: "|";
     margin-left: 0.5rem;
     animation: clign 1s ease-in-out infinite;
@@ -352,25 +430,25 @@ main .banner .console p.input::after {
     }
 }
 
-main .banner .browser nav .hist,
-main .banner .console nav .dots,
-main .banner .browser nav .dots {
+main .banner .minibrowser nav .hist,
+main .banner .miniconsole nav .dots,
+main .banner .minibrowser nav .dots {
     width: 7.5%;
     padding: .5rem 0;
     justify-content: space-between;
 }
 
-main .banner .browser nav .hist {
+main .banner .minibrowser nav .hist {
     width: 12.5%;
 }
 
-main .banner .browser nav .hist span {
+main .banner .minibrowser nav .hist span {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main .banner .browser nav .hist span::after {
+main .banner .minibrowser nav .hist span::after {
     content: "";
     width: 8px;
     height: 24px;
@@ -379,24 +457,25 @@ main .banner .browser nav .hist span::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M8 12l6-6v12z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
 }
 
-main .banner .browser nav .hist span:nth-child(2):after {
+main .banner .minibrowser nav .hist span:nth-child(2):after {
     transform: rotate(180deg);
 }
 
-main .banner .browser nav .hist span:nth-child(3):after {
+main .banner .minibrowser nav .hist span:nth-child(3):after {
     width: 16px;
     height: 16px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm4.82-4.924a7 7 0 1 0-1.852 1.266l-.975-1.755A5 5 0 1 1 17 12h-3l2.82 5.076z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
 }
 
-main .banner .browser nav input {
+main .banner .minibrowser nav input {
+    outline: none;
     border: none;
     width: 62.5%;
 }
 
 main .banner .image {
     position: absolute;
-    bottom: 25%;
+    bottom: 17.5%;
     left: -10%;
     display: flex;
     justify-content: center;
@@ -417,8 +496,8 @@ main .banner .image img {
 
 main .banner .chat {
     position: absolute;
-    bottom: 7.5%;
-    right: 9%;
+    bottom: 5%;
+    right: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -428,7 +507,7 @@ main .banner .chat {
 main .banner .chat div {
     border-radius: 2.5px;
     padding: 1rem;
-    background-color: black;
+    background-color: var(--primary);
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 }
@@ -440,22 +519,25 @@ main .banner .chat div:nth-child(2) {
     color: black;
 }
 
-main .banner .cursor {
+main .cursor {
     position: absolute;
-    top: 60px;
-    left: 35%;
+    top: 90%;
+    left: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.2rem;
     border: none;
     border-radius: 2.5px;
+    z-index: 2;
     background: transparent;
-    color: #fff;
-    background-color: #2fcc71;
+    color: var(--font);
+    background-color: var(--secondary);
+    z-index: 90;
+    transition: top 3.25s ease-in-out, left 3s ease-in-out .25s;
 }
 
-main .banner .cursor::after {
+main .cursor::after {
     position: absolute;
     top: -20px;
     left: -20px;
@@ -465,15 +547,15 @@ main .banner .cursor::after {
     transform: rotate(-45deg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 8l6 6H6z' fill='rgb(114, 19, 253)'/%3E%3C/svg%3E");
+}
+
+main .cursor:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    background-color: #2fcc71;
+}
+
+main .cursor:nth-child(2):after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 8l6 6H6z' fill='rgba(47,204,113,1)'/%3E%3C/svg%3E");
-}
-
-main .banner div .cursor:nth-child(2) {
-    top: 25%;
-    left: 15%;
-    background-color: #cc2f2f;
-}
-
-main .banner div .cursor:nth-child(2):after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 8l6 6H6z' fill='rgb(204, 47, 47,1)'/%3E%3C/svg%3E");
 }

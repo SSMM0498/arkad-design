@@ -105,5 +105,5 @@
 
 .sidebar-content.file-tree div.active {
     color: white;
-    background-color: var(--dprimary-col);
+    background-color: var(--dprimary);
 }

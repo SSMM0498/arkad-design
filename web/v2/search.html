@@ -12,10 +12,12 @@
 
 <body class="alt">
     <header>
-        <div class="logo">arkad</div>
+        <a href="./index.html" class="logo">
+            <img src="../img//logo.0.png" alt="arka-logo">
+        </a>
         <nav class="menu">
-            <span>Explore</span>
-            <span>Trending</span>
+            <a href="./catalog.html">Explore</a>
+            <a href="./trending.html">Trending</a>
             <span class="search">
                 <input type="search" placeholder="Search">
             </span>
@@ -27,22 +29,6 @@
     </header>
     <main class="search wide">
         <style>
-            body::before {
-                width: 2.5%;
-                opacity: .75;
-            }
-
-            html::before {
-                left: 2.5%;
-                width: 2.5%;
-                opacity: .75;
-            }
-
-            html::after {
-                left: 5%;
-                width: 2.5%;
-                opacity: .75;
-            }
 
             body::after {
                 top: -25vh;
@@ -50,7 +36,7 @@
                 width: 50vh;
                 height: 50vh;
                 opacity: .35;
-                background-color: var(--secondary-col);
+                background-color: var(--secondary);
             }
 
             main::after {
@@ -83,7 +69,7 @@
             }
 
             main.search section .search-word {
-                color: var(--dprimary-col);
+                color: var(--dprimary);
             }
 
             main.search section.grid {
@@ -118,7 +104,7 @@
                     <span class="tag">Type | Tous</span>
                 </div>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Redimensionnement en drag'n drop</h3>
                 </header>
@@ -154,7 +140,7 @@
                     <div class="time">62 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Ut inventore corrupti deleniti aut facilis</h3>
                 </header>
@@ -172,7 +158,7 @@
                     <div class="time">64 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Voluptatem reiciendis nihil aut exercitationem.</h3>
                 </header>
@@ -262,7 +248,7 @@
                     <div class="time">64 min</div>
                 </footer>
             </div>
-            <div class="card stacked">
+            <div class="card cursus">
                 <header>
                     <h3>Neque voluptatem excepturi qui repellat eum labore delectus ut.</h3>
                 </header>
@@ -424,6 +410,14 @@
             <p>Copyright ©️ 2021 <br /> made with ❤️ by ssmm0498</p>
         </div>
     </footer>
+    <script defer>
+        const search = document.querySelector("span.search");
+        const nav = document.querySelector("header nav.menu");
+
+        search.addEventListener(('click'), () => {
+            nav.classList.toggle("active-search");
+        });
+    </script>
 </body>
 
 </html>

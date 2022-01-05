@@ -33,7 +33,7 @@ body > footer > .footer-left > div {
 }
 
 body > footer > .footer-left > div > h3 {
-    color: var(--primary-col);
+    color: var(--primary);
     font-size: 1.1rem;
     font-weight: bold;
     margin: .5rem 0;
@@ -49,7 +49,7 @@ body > footer > .footer-left > div > .footer-links {
 }
 
 body > footer > .footer-left > div > .footer-links > a {
-    color: var(--tertiary-col);
+    color: var(--dsecondary);
     margin-right: 10px;
 }
 
@@ -80,7 +80,7 @@ body.player > footer > .controller > .timeline > .progress {
 body.player > footer > .controller > .timeline > .progress-btn {
     width: 5px;
     height: 15px;
-    background-color: var(--tertiary-col);
+    background-color: var(--tertiary);
     cursor: pointer;
 }
 

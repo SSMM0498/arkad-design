@@ -10,17 +10,29 @@
 
 /* Colors */
 :root {
-    --primary-col: #a9a0fa;
-    --dprimary-col:#453e85;
-    --secondary-col: #f3cb50;
-    --tertiary-col: #845af7;
+    /* Primaries */
+    --primary: #05040D;
+    --lprimary: #110E2D;
+    --lprimary-t: #110e2dcc;
+    
+    /* Primaries */
+    --secondary: #7213FD;
+    --dsecondary: #4202A2;
+    --lsecondary: #964FFE;
 
+    /* Primaries */
+    --tertiary: #13A0FD;
+    --dtertiary: #0273BD;
+    --ltertiary: #5EBEFE;
+    
     --white: #fff;
-    --gray: #f1f1f1;
+    --gray: #F8F8F8;
     --dgray: #aaaaaa;
     --dgray-t: #00000093;
 
-    --yellow: rgb(243, 203, 81);
+    --font: var(--primary);
+
+    --yellow: rgb(251, 255, 0);
     --cyan: #00d6e7;
     --alert: rgb(254, 34, 34);
     --warning: rgb(243, 203, 81);
@@ -28,27 +40,27 @@
 }
 
 .pcol {
-    color: var(--primary-col) !important;
+    color: var(--primary) !important;
 }
 
 .back-pcol {
-    background-color: var(--primary-col) !important;
+    background-color: var(--primary) !important;
 }
 
 .scol {
-    color: var(--secondary-col) !important;
+    color: var(--secondary) !important;
 }
 
 .back-scol {
-    background-color: var(--secondary-col) !important;
+    background-color: var(--secondary) !important;
 }
 
 .tcol {
-    color: var(--tertiary-col) !important;
+    color: var(--tertiary) !important;
 }
 
 .back-tcol {
-    background-color: var(--tertiary-col) !important;
+    background-color: var(--tertiary) !important;
 }
 
 .ycol {
@@ -87,6 +99,7 @@
 :root {
     --body-font: Inter;
     --body-font-alt: "Open Sans";
+    --body-font-hero: "Suez One";
     --hero-font-sz: 3rem;
     --title-font-sz: 2rem;
     --subtitle-font-sz: 1.75rem;

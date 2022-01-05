@@ -1,101 +1,63 @@
-@keyframes move1 {
+@keyframes float {
     0% {
-        top: 60px;
-        left: 35%;
+        transform: translateY(0);
     }
-    10% {
-        top: 100px;
-        left: 55%;
-    }
-    20% {
-        top: 200px;
-        left: 75%;
-    }
-    30% {
-        top: 250px;
-        left: 75%;
-    }
-    40% {
-        top: 300px;
-        left: 85%;
-    }
+
     50% {
-        top: 150px;
-        left: 75%;
+        transform: translateY(-20px);
     }
-    60% {
-        top: 75px;
-        left: 50%;
-    }
-    70% {
-        top: 70px;
-        left: 50%;
-    }
-    80% {
-        top: 60px;
-        left: 40%;
-    }
-    90% {
-        top: 65px;
-        left: 35%;
-    }
+
     100% {
-        top: 60px;
-        left: 35%;
+        transform: translateY(0);
     }
 }
 
-@keyframes move2 {
+@keyframes minifloat {
     0% {
-        top: 25%;
-        left: 15%;
+        transform: translateY(0);
     }
-    10% {
-        top: 35%;
-        left: 25%;
-    }
-    20% {
-        top: 55%;
-        left: 55%;
-    }
-    30% {
-        top: 55%;
-        left: 75%;
-    }
-    40% {
-        top: 55%;
-        left: 80%;
-    }
+
     50% {
-        top: 55%;
-        left: 75%;
+        transform: translateY(-5px);
     }
-    60% {
-        top: 45%;
-        left: 55%;
-    }
-    70% {
-        top: 40%;
-        left: 60%;
-    }
-    80% {
-        top: 10%;
-        left: 40%;
-    }
-    90% {
-        top: 5%;
-        left: 20%;
-    }
+
     100% {
-        top: 25%;
-        left: 15%;
+        transform: translateY(-0);
     }
 }
 
-.cursor.first {
-    animation: move1 10s ease-in-out infinite reverse;
+@keyframes rainbow {
+    0% {
+        color: var(--font);
+    }
+
+    25% {
+        color: #e20909;
+    }
+    
+    50% {
+        color: var(--secondary);
+    }
+
+    75% {
+        color: #ec0192;
+    }
+
+    100% {
+        color: var(--font);
+    }
 }
 
-.cursor.second {
-    animation: move2 12.5s ease-in-out infinite reverse;
+@keyframes click {
+    0% {
+        transform: translate(-5px, -5px) scale(.5) rotate(-45deg);
+    }
+
+    50% {
+        transform: translate(-2.5px, -2.5px) scale(1) rotate(-45deg);
+    }
+}
+
+.cursor.click::after {
+    animation: click 0.2s ease-in-out 1;
 }
