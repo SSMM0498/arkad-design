@@ -23,6 +23,13 @@
     background-color: black;
 }
 
+.technos.big>.tag,
+.slide.big>.tag {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+}
+
 .technos>.tag {
     margin-right: 0;
     margin-bottom: 0.5rem;
@@ -34,13 +41,14 @@
 }
 
 .technos>.tag.orange:hover,.slide>.tag.orange:hover {background-color:#E44D26;}
-.technos>.tag.lblue:hover,.slide>.tag.lblue:hover {background-color:#1572B6;}
+.technos>.tag.lblue:hover,.slide>.tag.lblue:hover {background-color:#1a84cf;}
 .technos>.tag.yellow:hover,.slide>.tag.yellow:hover {background-color:#F7DF1E; color: black;}
 .technos>.tag.blue:hover,.slide>.tag.blue:hover {background-color:#007ACC;}
 .technos>.tag.dblue:hover,.slide>.tag.dblue:hover {background-color:#3879AB; color:#fce24e;}
 .technos>.tag.lblue-alt:hover,.slide>.tag.lblue-alt:hover {color:skyblue;}
 .technos>.tag.green:hover,.slide>.tag.green:hover {background-color:#41B883; color: black;}
 .technos>.tag.dgreen:hover,.slide>.tag.dgreen:hover {background-color:green; color: white;}
+.technos>.tag.ddgreen:hover,.slide>.tag.ddgreen:hover {background-color:green; color: black;}
 .technos>.tag.lgreen:hover,.slide>.tag.lgreen:hover {background-color:#4f9b2e;}
 .technos>.tag.pink:hover,.slide>.tag.pink:hover {background-color: #DE33A6;}
 
@@ -57,9 +65,63 @@
     color: var(--secondary);
 }
 
+.technos>.tag:hover:before,
+.slide>.tag:hover:before {
+    color: white;
+}
+
 .slide>.tag.add::before {
     content: "+";
     margin-right: 0;
     font-style: normal;
 }
 .slide>.tag.tag.yellow::before, .slide>.tag.green::before,.slide>.tag.lgreen::before { color: var(--dprimary); }
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1rem;
+    width: 100%;
+}
+
+.boxes .box {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    min-height: 270px;
+    height: calc((65vw - 5rem) / 3);
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    color: var(--primary);
+}
+
+.boxes .box:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+}
+
+.boxes .box:hover .icon.dark {
+    filter: brightness(100%);
+    fill: white;
+}
+
+.boxes .box .icon {
+    margin-bottom: 3.5rem;
+    transform: scale(2.5) translate(12.5%, 12.5%);
+}
+
+.boxes .box .icon::after {
+    margin: 0;
+}
+
+.boxes .box h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.boxes .box p {
+    line-height: 1.25rem;
+}

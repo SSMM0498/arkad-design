@@ -6,22 +6,21 @@ body > header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 2.5rem;
+    padding: 0px 3rem;
     width: 100%;
     height: var(--header-h);
     backdrop-filter: blur(5px);
-    /* background-color: white; */
 }
 
-body > header .logo {
+body .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 125px;
     margin-top: 0.5rem;
 }
 
-body > header .logo img {
+body .logo img {
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -34,7 +33,7 @@ body > header nav {
     justify-content: space-around;
     width: 25%;
     height: 100%;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #ebebeb;
     transition: width .25s ease-in-out;
 }
 
@@ -92,8 +91,8 @@ body > header .profile > *:first-child {
 }
 
 body > header .avatar {
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     margin-right: 1rem;
     border-radius: 48px;
     object-fit: cover;

@@ -26,6 +26,7 @@ main .banner .right {
 main .banner h1 {
     position: relative;
     display: block;
+    width: 85%;
     font-weight: 500;
     font-size: 65px;
     line-height: 4.5rem;
@@ -48,31 +49,36 @@ main .banner h1 {
     animation: rainbow 5s ease-in-out infinite, float 5s ease-in-out infinite;
 }
 
-main .banner h1 span.text-code {
+h1 span.text-code,
+h2 span.text-code {
     display: inline-flex;
     align-items: center;
     color: var(--dsecondary);
 }
 
-main .banner h1 span.text-code::before,
-main .banner h1 span.text-code::after {
+h1 span.text-code::before,
+h2 span.text-code::before,
+h1 span.text-code::after,
+h2 span.text-code::after {
     display: block;
     color: var(--dsecondary);
 }
 
-main .banner h1 span.text-code::after {
+h2 span.text-code::after,
+h1 span.text-code::after {
     content: "}";
     display: block;
     color: var(--dsecondary);
 }
 
-main .banner h1 span.text-code::before {
+h2 span.text-code::before,
+h1 span.text-code::before {
     content: "{";
     display: block;
     color: var(--dsecondary);
 }
 
-main .banner  p.content {
+main .banner p.content {
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -422,9 +428,11 @@ main .banner .miniconsole p.input::after {
     0% {
         opacity: 1;
     }
+
     75% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -558,4 +566,29 @@ main .cursor:nth-child(2) {
 
 main .cursor:nth-child(2):after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 8l6 6H6z' fill='rgba(47,204,113,1)'/%3E%3C/svg%3E");
+}
+
+@media screen and (max-width: 1040px) {
+    main .banner {
+        align-items: center;
+        flex-direction: column-reverse;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    main .banner .left,
+    main .banner .right {
+        position: relative;
+        width: 100%;
+        height: 65vh !important;
+    }
+
+    main .banner .right {
+        width: 70%;
+    }
+
+
+    main .banner h1 {
+        width: 100%;
+    }
 }

@@ -10,75 +10,6 @@ body {
     background-color: white;
 }
 
-body::before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: .75%;
-    height: 100vh;
-    opacity: .5;
-    background-color: var(--primary);
-    z-index: -2;
-}
-
-html::before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: .75%;
-    width: .75%;
-    height: 100vh;
-    opacity: .5;
-    background-color: var(--tertiary);
-    z-index: -2;
-}
-
-html::after {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 1.5%;
-    width: .75%;
-    height: 100vh;
-    opacity: .8;
-    background-color: var(--secondary);
-    z-index: -2;
-}
-
-body::after {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 25vh;
-    right: 5%;
-    width: 75vh;
-    height: 75vh;
-    border-radius: 50vh;
-    opacity: .5;
-    /* background-color: var(--secondary); */
-    background-color: black;
-    z-index: -2;
-}
-
-main::after {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 30vh;
-    right: 40%;
-    width: 40vh;
-    height: 40vh;
-    border-radius: 50vh;
-    opacity: .125;
-    /* background-color: var(--cyan); */
-    background-color: black;
-    z-index: -2;
-}
-
 main {
     display: flex;
     align-items: center;
@@ -120,6 +51,20 @@ main section {
     justify-content: center;
 }
 
+main section.hfull {
+    min-height: 100vh;
+}
+
+main section.col {
+    height: auto;
+    padding: 2rem 0;
+    flex-direction: column;
+}
+
+main section.col:not(.hfull) {
+    justify-content: start;
+}
+
 main h1,
 main h2,
 main h3,
@@ -153,6 +98,11 @@ main h6 {
     font-size: 30px;
 }
 
+section > p.section-intro {
+    font-size: 20px;
+    margin-bottom: 3rem !important;
+}
+
 .btn {
     font-size: .95rem;
     color: white;
@@ -161,6 +111,10 @@ main h6 {
     border: none;
     border-radius: 2.5px;
     cursor: pointer;
+}
+
+.btn.prime {
+    background-color: var(--secondary);
 }
 
 .btn:hover {
@@ -191,3 +145,23 @@ main h6 {
     height: 1px;
     background-color: var(--primary);
 }
+
+@keyframes phare {
+    0% {
+        border-right:  0.08em solid var(--secondary);
+    }
+
+    50% {
+        border-right:  0.08em solid var(--secondary);
+    }
+    
+    51% {
+        border-right:  0.08em solid transparent;
+    }
+
+    100% {
+        border-right:  0.08em solid transparent;
+    }
+}
+
+.txt-rotate > .wrap { border-right: 0.08em solid var(--secondary); animation: phare .75s ease-in-out infinite forwards; }
