@@ -1,7 +1,7 @@
 /*===== VARIABLES CSS =====*/
 /* Layout */
 :root {
-    --header-h: 60px;
+    --header-h: 70px;
     --tiny-gasp: 2px;
     --gasp: 25px;
     --radius: 2.5px;
@@ -97,9 +97,9 @@
 
 /* Font and typography */
 :root {
-    --body-font: Inter;
-    --body-font-alt: "Open Sans";
-    --body-font-hero: "Suez One";
+    --body-font: 'Helvetica';
+    --body-font-alt: "OpenSans";
+    --body-font-hero: "SuezOne";
     --hero-font-sz: 3rem;
     --title-font-sz: 2rem;
     --subtitle-font-sz: 1.75rem;
